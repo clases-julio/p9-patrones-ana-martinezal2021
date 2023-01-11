@@ -1,0 +1,157 @@
+\hypertarget{classSensor}{}\doxysection{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}} ()
+\item 
+void \mbox{\hyperlink{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76}{turn\+On}} ()
+\item 
+void \mbox{\hyperlink{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082}{turn\+Off}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSensor_a55a5a955dde057c7db7215667dd69271}{state}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}\label{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{\} \textcolor{comment}{//we define the constructor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082}\label{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082}} 
+\index{Sensor@{Sensor}!turnOff@{turnOff}}
+\index{turnOff@{turnOff}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{turnOff()}{turnOff()}}
+{\footnotesize\ttfamily void Sensor\+::turn\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Depending on the state of the sensor, we turn it off and indicate its state 
+
+Definition at line 17 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                      \{}
+\DoxyCodeLine{18   \textcolor{comment}{//Depending on the state of the sensor, we turn it off and indicate its state}}
+\DoxyCodeLine{19   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSensor_a55a5a955dde057c7db7215667dd69271}{state}} == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{20     cout << \textcolor{stringliteral}{"{}\(\backslash\)nSensor Status: Off"{}} << endl;}
+\DoxyCodeLine{21     \mbox{\hyperlink{classSensor_a55a5a955dde057c7db7215667dd69271}{state}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{22   \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{23     cout << \textcolor{stringliteral}{"{}\(\backslash\)nThe sensor is already off"{}} << endl;}
+\DoxyCodeLine{24   \}}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Air\+Condition\+Sensor\+::show\+Choice(), Humidity\+Sensor\+::show\+Choice(), Ligth\+Level\+Sensor\+::show\+Choice(), and Temperature\+Sensor\+::show\+Choice().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76}\label{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76}} 
+\index{Sensor@{Sensor}!turnOn@{turnOn}}
+\index{turnOn@{turnOn}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{turnOn()}{turnOn()}}
+{\footnotesize\ttfamily void Sensor\+::turn\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Depending on the state of the sensor, we turn it on and indicate its state 
+
+Definition at line 7 of file Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                     \{}
+\DoxyCodeLine{8   \textcolor{comment}{//Depending on the state of the sensor, we turn it on and indicate its state}}
+\DoxyCodeLine{9   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSensor_a55a5a955dde057c7db7215667dd69271}{state}} == \textcolor{keyword}{false})\{}
+\DoxyCodeLine{10     cout << \textcolor{stringliteral}{"{}\(\backslash\)nSensor status: On"{}} << endl;}
+\DoxyCodeLine{11     \mbox{\hyperlink{classSensor_a55a5a955dde057c7db7215667dd69271}{state}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{12   \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{13     cout << \textcolor{stringliteral}{"{}\(\backslash\)nThe sensor is already on"{}} << endl;}
+\DoxyCodeLine{14   \}}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Air\+Condition\+Sensor\+::show\+Choice(), Humidity\+Sensor\+::show\+Choice(), Ligth\+Level\+Sensor\+::show\+Choice(), and Temperature\+Sensor\+::show\+Choice().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSensor_a55a5a955dde057c7db7215667dd69271}\label{classSensor_a55a5a955dde057c7db7215667dd69271}} 
+\index{Sensor@{Sensor}!state@{state}}
+\index{state@{state}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily bool Sensor\+::state = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Sensor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Sensor_8h}{Sensor.\+h}}\item 
+\mbox{\hyperlink{Sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

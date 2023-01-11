@@ -1,0 +1,5 @@
+<map id="HumiditySensor.h" name="HumiditySensor.h">
+<area shape="rect" id="node1" title="defines the HumiditySensor class, wich is is inherited from the sensor class, with its attributes,..." alt="" coords="13,5,150,32"/>
+<area shape="rect" id="node2" href="$Sensor_8h.html" title="defines the sensor class with its attributes, methods, and constructor" alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="41,155,121,181"/>
+</map>

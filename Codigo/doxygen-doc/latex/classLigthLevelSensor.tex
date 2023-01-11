@@ -1,0 +1,262 @@
+\hypertarget{classLigthLevelSensor}{}\doxysection{Ligth\+Level\+Sensor Class Reference}
+\label{classLigthLevelSensor}\index{LigthLevelSensor@{LigthLevelSensor}}
+
+
+{\ttfamily \#include $<$Ligth\+Level\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Ligth\+Level\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classLigthLevelSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ligth\+Level\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classLigthLevelSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLigthLevelSensor_acea2e9ddec7705271b5d69b545160376}{Ligth\+Level\+Sensor}} ()
+\item 
+void \mbox{\hyperlink{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df}{check\+Ligth\+Level}} ()
+\item 
+void \mbox{\hyperlink{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0}{get\+Ligth\+Level}} ()
+\item 
+void \mbox{\hyperlink{classLigthLevelSensor_a56555c1ec2b46fa92e0d5b34bf2d2822}{show\+Choice}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classLigthLevelSensor_a0901ee6515569059d1e7120192092ebf}{ligth\+Level}}
+\item 
+int \mbox{\hyperlink{classLigthLevelSensor_ad9a364d4d9db24c56481410554815f0e}{choice}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Ligth\+Level\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLigthLevelSensor_acea2e9ddec7705271b5d69b545160376}\label{classLigthLevelSensor_acea2e9ddec7705271b5d69b545160376}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!LigthLevelSensor@{LigthLevelSensor}}
+\index{LigthLevelSensor@{LigthLevelSensor}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{LigthLevelSensor()}{LigthLevelSensor()}}
+{\footnotesize\ttfamily Ligth\+Level\+Sensor\+::\+Ligth\+Level\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Ligth\+Level\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 :\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of sensor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df}\label{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!checkLigthLevel@{checkLigthLevel}}
+\index{checkLigthLevel@{checkLigthLevel}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{checkLigthLevel()}{checkLigthLevel()}}
+{\footnotesize\ttfamily void Ligth\+Level\+Sensor\+::check\+Ligth\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random number to simulate de current ligth level 
+
+Definition at line 11 of file Ligth\+Level\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                       \{}
+\DoxyCodeLine{12   \textcolor{comment}{//create a random number}}
+\DoxyCodeLine{13   srand(time(NULL)+2); }
+\DoxyCodeLine{14   \mbox{\hyperlink{classLigthLevelSensor_a0901ee6515569059d1e7120192092ebf}{ligthLevel}} = rand()\%101;}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+References ligth\+Level.
+
+
+
+Referenced by get\+Ligth\+Level().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0}\label{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!getLigthLevel@{getLigthLevel}}
+\index{getLigthLevel@{getLigthLevel}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{getLigthLevel()}{getLigthLevel()}}
+{\footnotesize\ttfamily void Ligth\+Level\+Sensor\+::get\+Ligth\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the current ligth level created with \mbox{\hyperlink{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df}{check\+Ligth\+Level()}} 
+
+Definition at line 17 of file Ligth\+Level\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                                      \{}
+\DoxyCodeLine{18   \textcolor{comment}{//displays the current ligth level created with checkLigthLevel()}}
+\DoxyCodeLine{19   \mbox{\hyperlink{classLigthLevelSensor_ab1e733f5bdadc92ae53568efa8f865df}{checkLigthLevel}}();}
+\DoxyCodeLine{20   cout << \textcolor{stringliteral}{"{}\(\backslash\)nCurrent ligth level: "{}} << \mbox{\hyperlink{classLigthLevelSensor_a0901ee6515569059d1e7120192092ebf}{ligthLevel}} << \textcolor{stringliteral}{"{}\%"{}} << endl;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+References check\+Ligth\+Level(), and ligth\+Level.
+
+
+
+Referenced by show\+Choice().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classLigthLevelSensor_a56555c1ec2b46fa92e0d5b34bf2d2822}\label{classLigthLevelSensor_a56555c1ec2b46fa92e0d5b34bf2d2822}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!showChoice@{showChoice}}
+\index{showChoice@{showChoice}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{showChoice()}{showChoice()}}
+{\footnotesize\ttfamily void Ligth\+Level\+Sensor\+::show\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the ligth level sensor options menu Depending on the option that is entered, it calls its respective function 
+
+Definition at line 23 of file Ligth\+Level\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                  \{}
+\DoxyCodeLine{24   \textcolor{comment}{//displays the ligth level sensor options menu}}
+\DoxyCodeLine{25   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{26     cout << \textcolor{stringliteral}{"{}\(\backslash\)n                \_      \_         \_    \_       \_                    \_ "{}} << endl }
+\DoxyCodeLine{27     << \textcolor{stringliteral}{"{}               | |    (\_)       | |  | |     | |                  | |"{}} << endl }
+\DoxyCodeLine{28     << \textcolor{stringliteral}{"{}               | |     \_   \_\_ \_ | |\_ | |\_\_   | |  \_\_\_ \_\_   \_\_ \_\_\_ | |"{}} << endl }
+\DoxyCodeLine{29     << \textcolor{stringliteral}{"{}               | |    | | / \_` || \_\_|| '\_ \(\backslash\)\(\backslash\)  | | / \_ \(\backslash\)\(\backslash\)  \(\backslash\)\(\backslash\) / // \_ \(\backslash\)\(\backslash\)| |"{}} << endl }
+\DoxyCodeLine{30     << \textcolor{stringliteral}{"{}               | |\_\_\_\_| || (\_| || |\_ | | | | | ||  \_\_/ \(\backslash\)\(\backslash\) V /|  \_\_/| |"{}} << endl }
+\DoxyCodeLine{31     << \textcolor{stringliteral}{"{}               \(\backslash\)\(\backslash\)\_\_\_\_\_/|\_| \(\backslash\)\(\backslash\)\_\_, | \(\backslash\)\(\backslash\)\_\_||\_| |\_| |\_| \(\backslash\)\(\backslash\)\_\_\_|  \(\backslash\)\(\backslash\)\_/  \(\backslash\)\(\backslash\)\_\_\_||\_|"{}} << endl }
+\DoxyCodeLine{32     << \textcolor{stringliteral}{"{}                           \_\_/ |                                     "{}} << endl }
+\DoxyCodeLine{33     << \textcolor{stringliteral}{"{}                          |\_\_\_/                                      "{}} << endl }
+\DoxyCodeLine{34     << \textcolor{stringliteral}{"{}                                                                     "{}} << endl}
+\DoxyCodeLine{35     << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl}
+\DoxyCodeLine{36     << \textcolor{stringliteral}{"{}ººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{37     cout << \textcolor{stringliteral}{"{}                                   1. TURN ON"{}} << endl }
+\DoxyCodeLine{38         << \textcolor{stringliteral}{"{}                                   2. TURN OFF"{}} << endl }
+\DoxyCodeLine{39         << \textcolor{stringliteral}{"{}                                   3. SHOW CURRENT LIGTH LEVEL"{}} << endl }
+\DoxyCodeLine{40         << \textcolor{stringliteral}{"{}                                   4. BACK TO MENU"{}} << endl;}
+\DoxyCodeLine{41     cout << \textcolor{stringliteral}{"{}Enter your choice number: "{}};}
+\DoxyCodeLine{42     cin >> \mbox{\hyperlink{classLigthLevelSensor_ad9a364d4d9db24c56481410554815f0e}{choice}};}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{44     \textcolor{comment}{//Depending on the option that is entered, it calls its respective function}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classLigthLevelSensor_ad9a364d4d9db24c56481410554815f0e}{choice}})}
+\DoxyCodeLine{46     \{}
+\DoxyCodeLine{47     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{48       \mbox{\hyperlink{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76}{Sensor::turnOn}}();}
+\DoxyCodeLine{49       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{50       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{51       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{54       \mbox{\hyperlink{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082}{Sensor::turnOff}}();}
+\DoxyCodeLine{55       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{56       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{57       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{60       \mbox{\hyperlink{classLigthLevelSensor_aed59b7a84007c2f2988cd8a5a3e129c0}{getLigthLevel}}();}
+\DoxyCodeLine{61       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{62       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{63       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{66       \textcolor{comment}{//go back to the main menu}}
+\DoxyCodeLine{67       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{68       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70   \}}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+
+
+References choice, get\+Ligth\+Level(), Sensor\+::turn\+Off(), and Sensor\+::turn\+On().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLigthLevelSensor_a56555c1ec2b46fa92e0d5b34bf2d2822_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLigthLevelSensor_ad9a364d4d9db24c56481410554815f0e}\label{classLigthLevelSensor_ad9a364d4d9db24c56481410554815f0e}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!choice@{choice}}
+\index{choice@{choice}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{choice}{choice}}
+{\footnotesize\ttfamily int Ligth\+Level\+Sensor\+::choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Ligth\+Level\+Sensor.\+h.
+
+
+
+Referenced by show\+Choice().
+
+\mbox{\Hypertarget{classLigthLevelSensor_a0901ee6515569059d1e7120192092ebf}\label{classLigthLevelSensor_a0901ee6515569059d1e7120192092ebf}} 
+\index{LigthLevelSensor@{LigthLevelSensor}!ligthLevel@{ligthLevel}}
+\index{ligthLevel@{ligthLevel}!LigthLevelSensor@{LigthLevelSensor}}
+\doxysubsubsection{\texorpdfstring{ligthLevel}{ligthLevel}}
+{\footnotesize\ttfamily float Ligth\+Level\+Sensor\+::ligth\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Ligth\+Level\+Sensor.\+h.
+
+
+
+Referenced by check\+Ligth\+Level(), and get\+Ligth\+Level().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LigthLevelSensor_8h}{Ligth\+Level\+Sensor.\+h}}\item 
+\mbox{\hyperlink{LigthLevelSensor_8cpp}{Ligth\+Level\+Sensor.\+cpp}}\end{DoxyCompactItemize}

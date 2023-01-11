@@ -1,0 +1,329 @@
+\hypertarget{classDashboard}{}\doxysection{Dashboard Class Reference}
+\label{classDashboard}\index{Dashboard@{Dashboard}}
+
+
+{\ttfamily \#include $<$Dashboard.\+h$>$}
+
+
+
+Collaboration diagram for Dashboard\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDashboard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDashboard_a0e6f5adac5375dd723e98c5e3a2ebb64}{Dashboard}} ()
+\item 
+void \mbox{\hyperlink{classDashboard_a28f1d7e9394a4c0e1d76f9787912c715}{show\+Menu}} ()
+\item 
+bool \mbox{\hyperlink{classDashboard_ade2359e7ddf9caeaa261c2f1bdefb1c0}{get\+Option}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}{option}}
+\item 
+\mbox{\hyperlink{classLogin}{Login}} \mbox{\hyperlink{classDashboard_adf1cb3795182a06e1881f2a882eba812}{L}}
+\item 
+\mbox{\hyperlink{classDataBase}{Data\+Base}} \mbox{\hyperlink{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}{D}}
+\item 
+\mbox{\hyperlink{classTemperatureSensor}{Temperature\+Sensor}} \mbox{\hyperlink{classDashboard_afe5a17011d5a0073e2125641da04c7cb}{T}}
+\item 
+\mbox{\hyperlink{classHumiditySensor}{Humidity\+Sensor}} \mbox{\hyperlink{classDashboard_a07bcefa23054f1f3b3581799d15dfa3c}{H}}
+\item 
+\mbox{\hyperlink{classLigthLevelSensor}{Ligth\+Level\+Sensor}} \mbox{\hyperlink{classDashboard_a112b366a13c40137cd18b73be9410a05}{Li}}
+\item 
+\mbox{\hyperlink{classAirConditionSensor}{Air\+Condition\+Sensor}} \mbox{\hyperlink{classDashboard_a1e3fc2c918b6f0b3052befcacfe49fec}{A}}
+\item 
+\mbox{\hyperlink{classRGBCamera}{RGBCamera}} \mbox{\hyperlink{classDashboard_afafc55c562d50a02da1f4fe88889ce66}{RC}}
+\item 
+\mbox{\hyperlink{classThermalCamera}{Thermal\+Camera}} \mbox{\hyperlink{classDashboard_aa9eebb37ec22cba3ea87087fc6ac6bdf}{TC}}
+\item 
+\mbox{\hyperlink{classMicrophone}{Microphone}} \mbox{\hyperlink{classDashboard_a58c580501a299210c8543b554958b47d}{M}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 16 of file Dashboard.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDashboard_a0e6f5adac5375dd723e98c5e3a2ebb64}\label{classDashboard_a0e6f5adac5375dd723e98c5e3a2ebb64}} 
+\index{Dashboard@{Dashboard}!Dashboard@{Dashboard}}
+\index{Dashboard@{Dashboard}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{Dashboard()}{Dashboard()}}
+{\footnotesize\ttfamily Dashboard\+::\+Dashboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file Dashboard.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                     \{ \textcolor{comment}{//we define the constructor}}
+\DoxyCodeLine{19   \textcolor{keyword}{this} -\/> \mbox{\hyperlink{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}{option}} = \mbox{\hyperlink{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}{option}};}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDashboard_ade2359e7ddf9caeaa261c2f1bdefb1c0}\label{classDashboard_ade2359e7ddf9caeaa261c2f1bdefb1c0}} 
+\index{Dashboard@{Dashboard}!getOption@{getOption}}
+\index{getOption@{getOption}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}}
+{\footnotesize\ttfamily bool Dashboard\+::get\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Depending on the option entered, performs an action 
+
+Definition at line 22 of file Dashboard.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                          \{}
+\DoxyCodeLine{23   \textcolor{comment}{//depending on the option entered, performs an action}}
+\DoxyCodeLine{24   cout << \textcolor{stringliteral}{"{}Enter the number of the action you want to do: "{}};}
+\DoxyCodeLine{25   cin >> \mbox{\hyperlink{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}{option}};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}{option}})}
+\DoxyCodeLine{28   \{}
+\DoxyCodeLine{29     \textcolor{keywordflow}{case} 1:  }
+\DoxyCodeLine{30       system(\textcolor{stringliteral}{"{}clear"{}}); }
+\DoxyCodeLine{31       \mbox{\hyperlink{classDashboard_afe5a17011d5a0073e2125641da04c7cb}{T}}.\mbox{\hyperlink{classTemperatureSensor_a0857ea864b206af421d685b975bb93b7}{showChoice}}();}
+\DoxyCodeLine{32       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{35       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{36       \mbox{\hyperlink{classDashboard_a07bcefa23054f1f3b3581799d15dfa3c}{H}}.\mbox{\hyperlink{classHumiditySensor_a6815f33d214bd301ed61354082869223}{showChoice}}();}
+\DoxyCodeLine{37       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{38     }
+\DoxyCodeLine{39     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{40       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{41       \mbox{\hyperlink{classDashboard_a112b366a13c40137cd18b73be9410a05}{Li}}.\mbox{\hyperlink{classLigthLevelSensor_a56555c1ec2b46fa92e0d5b34bf2d2822}{showChoice}}();}
+\DoxyCodeLine{42       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{45       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{46       \mbox{\hyperlink{classDashboard_a1e3fc2c918b6f0b3052befcacfe49fec}{A}}.\mbox{\hyperlink{classAirConditionSensor_aaa1605a7b9b7361946301505de89b82a}{showChoice}}();}
+\DoxyCodeLine{47       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{50       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{51       \mbox{\hyperlink{classDashboard_afafc55c562d50a02da1f4fe88889ce66}{RC}}.\mbox{\hyperlink{classRGBCamera_a67490528d81ee06c9aaf82697441d7a4}{showChoice}}();}
+\DoxyCodeLine{52       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{55       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{56       \mbox{\hyperlink{classDashboard_aa9eebb37ec22cba3ea87087fc6ac6bdf}{TC}}.\mbox{\hyperlink{classThermalCamera_a11db09e03718ed4d388b44817a0fe448}{showChoice}}();}
+\DoxyCodeLine{57       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{60       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{61       \mbox{\hyperlink{classDashboard_a58c580501a299210c8543b554958b47d}{M}}.\mbox{\hyperlink{classMicrophone_ac27b9e335838cdaec6ad17e1470f577b}{showChoice}}();}
+\DoxyCodeLine{62       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{65       \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{66       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{69       \mbox{\hyperlink{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}{D}}.\mbox{\hyperlink{classDataBase_ac522929fd10c91ff880d41fa046380b3}{saveFile}}();}
+\DoxyCodeLine{70       exit(EXIT\_SUCCESS);}
+\DoxyCodeLine{71       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keywordflow}{case} 10:}
+\DoxyCodeLine{74       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{75       \mbox{\hyperlink{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}{D}}.\mbox{\hyperlink{classDataBase_a480086ac7aefde05a27e5269922f7bb7}{showAdminChoices}}();}
+\DoxyCodeLine{76       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{77   \}}
+\DoxyCodeLine{78   \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDashboard_a28f1d7e9394a4c0e1d76f9787912c715}\label{classDashboard_a28f1d7e9394a4c0e1d76f9787912c715}} 
+\index{Dashboard@{Dashboard}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily void Dashboard\+::show\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the login screen and, depending on whether the user exists, displays the main menu Checks that the user entered is of type Admin Allows the \mbox{\hyperlink{classDashboard_a28f1d7e9394a4c0e1d76f9787912c715}{show\+Menu()}} function to be called again when you want to log out and re-\/enter a user in case of not putting it, it does not verify that the user exists 
+
+Definition at line 81 of file Dashboard.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                         \{}
+\DoxyCodeLine{82     \textcolor{keywordflow}{try}\{    }
+\DoxyCodeLine{83       \textcolor{comment}{//displays the login screen and, depending on whether the user exists, displays the main menu}}
+\DoxyCodeLine{84       \textcolor{keywordflow}{if} (\mbox{\hyperlink{classDashboard_adf1cb3795182a06e1881f2a882eba812}{L}}.\mbox{\hyperlink{classLogin_a0da5d78c5cafad08f3ec60e6f2d29671}{checkLogin}}(\&\mbox{\hyperlink{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}{D}}))\{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})\{}
+\DoxyCodeLine{86           system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{87           cout << \textcolor{stringliteral}{"{}               \_\_  \_\_     \_     \_\_\_  \_   \_       \_\_  \_\_  \_\_\_\_\_  \_   \_  \_   \_ "{}} << endl }
+\DoxyCodeLine{88           << \textcolor{stringliteral}{"{}              |  \(\backslash\)\(\backslash\)/  |   / \(\backslash\)\(\backslash\)   |\_ \_|| \(\backslash\)\(\backslash\) | |     |  \(\backslash\)\(\backslash\)/  || \_\_\_\_|| \(\backslash\)\(\backslash\) | || | | |"{}} << endl }
+\DoxyCodeLine{89           << \textcolor{stringliteral}{"{}              | |\(\backslash\)\(\backslash\)/| |  / \_ \(\backslash\)\(\backslash\)   | | |  \(\backslash\)\(\backslash\)| |     | |\(\backslash\)\(\backslash\)/| ||  \_|  |  \(\backslash\)\(\backslash\)| || | | |"{}} << endl }
+\DoxyCodeLine{90           << \textcolor{stringliteral}{"{}              | |  | | / \_\_\_ \(\backslash\)\(\backslash\)  | | | |\(\backslash\)\(\backslash\)  |     | |  | || |\_\_\_ | |\(\backslash\)\(\backslash\)  || |\_| |"{}} << endl }
+\DoxyCodeLine{91           << \textcolor{stringliteral}{"{}              |\_|  |\_|/\_/   \(\backslash\)\(\backslash\)\_\(\backslash\)\(\backslash\)|\_\_\_||\_| \(\backslash\)\(\backslash\)\_|     |\_|  |\_||\_\_\_\_\_||\_| \(\backslash\)\(\backslash\)\_| \(\backslash\)\(\backslash\)\_\_\_/ "{}} << endl }
+\DoxyCodeLine{92           << \textcolor{stringliteral}{"{}                                                                             "{}} << endl          }
+\DoxyCodeLine{93           << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl}
+\DoxyCodeLine{94           << \textcolor{stringliteral}{"{}ººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97           cout << \textcolor{stringliteral}{"{}                                   1. TEMPERATURE SENSOR"{}} << endl << \textcolor{stringliteral}{"{}                                   2. HUMIDITY SENSOR"{}} << endl }
+\DoxyCodeLine{98           << \textcolor{stringliteral}{"{}                                   3. LIGTH LEVEL SENSOR"{}} << endl << \textcolor{stringliteral}{"{}                                   4. AIR CONDITION SENSOR"{}} << endl }
+\DoxyCodeLine{99           << \textcolor{stringliteral}{"{}                                   5. RGB CAMERA"{}} << endl << \textcolor{stringliteral}{"{}                                   6. THERMAL CAMERA"{}} << endl }
+\DoxyCodeLine{100           << \textcolor{stringliteral}{"{}                                   7. MICROPHONE"{}} << endl << \textcolor{stringliteral}{"{}                                   8. SIGN OFF"{}} << endl }
+\DoxyCodeLine{101           << \textcolor{stringliteral}{"{}                                   9. EXIT"{}} << endl;}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103           \textcolor{comment}{//checks that the user entered is of type Admin}}
+\DoxyCodeLine{104           \textcolor{keywordflow}{if}(\mbox{\hyperlink{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}{D}}.\mbox{\hyperlink{classDataBase_a99ad4b08ad5044525f7ce5f47629f64e}{userNow}}.\mbox{\hyperlink{classUser_a59e4926bc55186ab2a3d18e66082070b}{checkAdmin}}())\{}
+\DoxyCodeLine{105             cout << \textcolor{stringliteral}{"{}                                   10. MANAGE USERS\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{106           \}}
+\DoxyCodeLine{107             }
+\DoxyCodeLine{108           \textcolor{comment}{//allows the showMenu() function to be called again when you want to log out and re-\/enter a user }}
+\DoxyCodeLine{109           \textcolor{comment}{//in case of not putting it, it does not verify that the user exists}}
+\DoxyCodeLine{110           \textcolor{keywordflow}{if} (\mbox{\hyperlink{classDashboard_ade2359e7ddf9caeaa261c2f1bdefb1c0}{getOption}}())\{}
+\DoxyCodeLine{111             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{112           \}}
+\DoxyCodeLine{113         \}}
+\DoxyCodeLine{114       \}}
+\DoxyCodeLine{115     \}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keywordflow}{catch}(\mbox{\hyperlink{classUserNumException}{UserNumException}} \&except)\{}
+\DoxyCodeLine{118       cout << \textcolor{stringliteral}{"{}Exception: "{}} << except.what() << endl;}
+\DoxyCodeLine{119     \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \textcolor{keywordflow}{catch}(\mbox{\hyperlink{classNIFException}{NIFException}} \&except)\{}
+\DoxyCodeLine{122       cout << \textcolor{stringliteral}{"{}Exception: "{}} << except.what() << endl;}
+\DoxyCodeLine{123     \}    }
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+
+
+Referenced by main().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classDashboard_a28f1d7e9394a4c0e1d76f9787912c715_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDashboard_a1e3fc2c918b6f0b3052befcacfe49fec}\label{classDashboard_a1e3fc2c918b6f0b3052befcacfe49fec}} 
+\index{Dashboard@{Dashboard}!A@{A}}
+\index{A@{A}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAirConditionSensor}{Air\+Condition\+Sensor}} Dashboard\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}\label{classDashboard_ac99fd536214eeaeb9f64379decbeb4da}} 
+\index{Dashboard@{Dashboard}!D@{D}}
+\index{D@{D}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{D}{D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataBase}{Data\+Base}} Dashboard\+::D\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_a07bcefa23054f1f3b3581799d15dfa3c}\label{classDashboard_a07bcefa23054f1f3b3581799d15dfa3c}} 
+\index{Dashboard@{Dashboard}!H@{H}}
+\index{H@{H}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHumiditySensor}{Humidity\+Sensor}} Dashboard\+::H\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_adf1cb3795182a06e1881f2a882eba812}\label{classDashboard_adf1cb3795182a06e1881f2a882eba812}} 
+\index{Dashboard@{Dashboard}!L@{L}}
+\index{L@{L}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogin}{Login}} Dashboard\+::L\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_a112b366a13c40137cd18b73be9410a05}\label{classDashboard_a112b366a13c40137cd18b73be9410a05}} 
+\index{Dashboard@{Dashboard}!Li@{Li}}
+\index{Li@{Li}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{Li}{Li}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLigthLevelSensor}{Ligth\+Level\+Sensor}} Dashboard\+::\+Li\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_a58c580501a299210c8543b554958b47d}\label{classDashboard_a58c580501a299210c8543b554958b47d}} 
+\index{Dashboard@{Dashboard}!M@{M}}
+\index{M@{M}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMicrophone}{Microphone}} Dashboard\+::M\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}\label{classDashboard_ab0006962caaa1b124bd6ba1adb7a689c}} 
+\index{Dashboard@{Dashboard}!option@{option}}
+\index{option@{option}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{option}{option}}
+{\footnotesize\ttfamily int Dashboard\+::option\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_afafc55c562d50a02da1f4fe88889ce66}\label{classDashboard_afafc55c562d50a02da1f4fe88889ce66}} 
+\index{Dashboard@{Dashboard}!RC@{RC}}
+\index{RC@{RC}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{RC}{RC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRGBCamera}{RGBCamera}} Dashboard\+::\+RC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_afe5a17011d5a0073e2125641da04c7cb}\label{classDashboard_afe5a17011d5a0073e2125641da04c7cb}} 
+\index{Dashboard@{Dashboard}!T@{T}}
+\index{T@{T}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTemperatureSensor}{Temperature\+Sensor}} Dashboard\+::T\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Dashboard.\+h.
+
+\mbox{\Hypertarget{classDashboard_aa9eebb37ec22cba3ea87087fc6ac6bdf}\label{classDashboard_aa9eebb37ec22cba3ea87087fc6ac6bdf}} 
+\index{Dashboard@{Dashboard}!TC@{TC}}
+\index{TC@{TC}!Dashboard@{Dashboard}}
+\doxysubsubsection{\texorpdfstring{TC}{TC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classThermalCamera}{Thermal\+Camera}} Dashboard\+::\+TC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Dashboard.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Dashboard_8h}{Dashboard.\+h}}\item 
+\mbox{\hyperlink{Dashboard_8cpp}{Dashboard.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,193 @@
+\hypertarget{classThermalCamera}{}\doxysection{Thermal\+Camera Class Reference}
+\label{classThermalCamera}\index{ThermalCamera@{ThermalCamera}}
+
+
+{\ttfamily \#include $<$Thermal\+Camera.\+h$>$}
+
+
+
+Inheritance diagram for Thermal\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classThermalCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Thermal\+Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classThermalCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classThermalCamera_ad412373ff085158ba57790f24b5dccdd}{Thermal\+Camera}} ()
+\item 
+void \mbox{\hyperlink{classThermalCamera_a695af965c773b862d297d8e80981e916}{get\+Thermal\+Image}} ()
+\item 
+void \mbox{\hyperlink{classThermalCamera_a11db09e03718ed4d388b44817a0fe448}{show\+Choice}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classThermalCamera_add511f9235091a184c70d4b90fed3fb1}{choice}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Thermal\+Camera.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classThermalCamera_ad412373ff085158ba57790f24b5dccdd}\label{classThermalCamera_ad412373ff085158ba57790f24b5dccdd}} 
+\index{ThermalCamera@{ThermalCamera}!ThermalCamera@{ThermalCamera}}
+\index{ThermalCamera@{ThermalCamera}!ThermalCamera@{ThermalCamera}}
+\doxysubsubsection{\texorpdfstring{ThermalCamera()}{ThermalCamera()}}
+{\footnotesize\ttfamily Thermal\+Camera\+::\+Thermal\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Thermal\+Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 :\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of camera}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classThermalCamera_a695af965c773b862d297d8e80981e916}\label{classThermalCamera_a695af965c773b862d297d8e80981e916}} 
+\index{ThermalCamera@{ThermalCamera}!getThermalImage@{getThermalImage}}
+\index{getThermalImage@{getThermalImage}!ThermalCamera@{ThermalCamera}}
+\doxysubsubsection{\texorpdfstring{getThermalImage()}{getThermalImage()}}
+{\footnotesize\ttfamily void Thermal\+Camera\+::get\+Thermal\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints that an image is being displayed 
+
+Definition at line 10 of file Thermal\+Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                     \{}
+\DoxyCodeLine{11   \textcolor{comment}{//prints that an image is being displayed}}
+\DoxyCodeLine{12   cout << \textcolor{stringliteral}{"{} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                     LIVE... -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                Thermal image                -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{}-\/                                             -\/"{}} << endl << \textcolor{stringliteral}{"{} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}}<< endl;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+Referenced by show\+Choice().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classThermalCamera_a695af965c773b862d297d8e80981e916_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classThermalCamera_a11db09e03718ed4d388b44817a0fe448}\label{classThermalCamera_a11db09e03718ed4d388b44817a0fe448}} 
+\index{ThermalCamera@{ThermalCamera}!showChoice@{showChoice}}
+\index{showChoice@{showChoice}!ThermalCamera@{ThermalCamera}}
+\doxysubsubsection{\texorpdfstring{showChoice()}{showChoice()}}
+{\footnotesize\ttfamily void Thermal\+Camera\+::show\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the thrermal camera options menu Depending on the option that is entered, it calls its respective function 
+
+Definition at line 15 of file Thermal\+Camera.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                               \{}
+\DoxyCodeLine{16   \textcolor{comment}{//displays the thrermal camera options menu}}
+\DoxyCodeLine{17   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{18     cout << \textcolor{stringliteral}{"{}\(\backslash\)n  \_\_\_\_\_  \_                                    \_     \_\_\_\_\_                                     "{}} << endl }
+\DoxyCodeLine{19     << \textcolor{stringliteral}{"{} |\_   \_|| |                                  | |   /  \_\_ \(\backslash\)\(\backslash\)                                    "{}} << endl }
+\DoxyCodeLine{20     << \textcolor{stringliteral}{"{}   | |  | |\_\_    \_\_\_  \_ \_\_  \_ \_\_ \_\_\_    \_\_ \_ | |   | /  \(\backslash\)\(\backslash\)/  \_\_ \_  \_ \_\_ \_\_\_    \_\_\_  \_ \_\_  \_\_ \_ "{}} << endl }
+\DoxyCodeLine{21     << \textcolor{stringliteral}{"{}   | |  | '\_ \(\backslash\)\(\backslash\)  / \_ \(\backslash\)\(\backslash\)| '\_\_|| '\_ ` \_ \(\backslash\)\(\backslash\)  / \_` || |   | |     / \_` || '\_ ` \_ \(\backslash\)\(\backslash\)  / \_ \(\backslash\)\(\backslash\)| '\_\_|/ \_` |"{}} << endl }
+\DoxyCodeLine{22     << \textcolor{stringliteral}{"{}   | |  | | | ||  \_\_/| |   | | | | | || (\_| || |   | \(\backslash\)\(\backslash\)\_\_/\(\backslash\)\(\backslash\)| (\_| || | | | | ||  \_\_/| |  | (\_| |"{}} << endl }
+\DoxyCodeLine{23     << \textcolor{stringliteral}{"{}   \(\backslash\)\(\backslash\)\_/  |\_| |\_| \(\backslash\)\(\backslash\)\_\_\_||\_|   |\_| |\_| |\_| \(\backslash\)\(\backslash\)\_\_,\_||\_|    \(\backslash\)\(\backslash\)\_\_\_\_/ \(\backslash\)\(\backslash\)\_\_,\_||\_| |\_| |\_| \(\backslash\)\(\backslash\)\_\_\_||\_|   \(\backslash\)\(\backslash\)\_\_,\_|"{}} << endl }
+\DoxyCodeLine{24     << \textcolor{stringliteral}{"{}                                                                                                              "{}} << endl}
+\DoxyCodeLine{25     << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl}
+\DoxyCodeLine{26     << \textcolor{stringliteral}{"{}ººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{27     cout << \textcolor{stringliteral}{"{}                                   1. TURN ON"{}} << endl }
+\DoxyCodeLine{28         << \textcolor{stringliteral}{"{}                                   2. TURN OFF"{}} << endl }
+\DoxyCodeLine{29         << \textcolor{stringliteral}{"{}                                   3. SHOW CURRENT THERMAL IMAGE"{}} << endl }
+\DoxyCodeLine{30         << \textcolor{stringliteral}{"{}                                   4. BACK TO MENU"{}} << endl;}
+\DoxyCodeLine{31     cout << \textcolor{stringliteral}{"{}Enter your choice number: "{}};}
+\DoxyCodeLine{32     cin >> \mbox{\hyperlink{classThermalCamera_add511f9235091a184c70d4b90fed3fb1}{choice}};}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{34     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classThermalCamera_add511f9235091a184c70d4b90fed3fb1}{choice}})}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{37       \mbox{\hyperlink{classCamera_a59394101212a015f16fa504adc4830a6}{Camera::turnOn}}();}
+\DoxyCodeLine{38       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{39       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{40       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{43       \mbox{\hyperlink{classCamera_a90fca4b59b72c967a01aa6eb93e2c6e1}{Camera::turnOff}}();}
+\DoxyCodeLine{44       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{45       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{46       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{49       \mbox{\hyperlink{classThermalCamera_a695af965c773b862d297d8e80981e916}{getThermalImage}}();}
+\DoxyCodeLine{50       system(\textcolor{stringliteral}{"{}sleep 10"{}});}
+\DoxyCodeLine{51       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{52       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{55       \textcolor{comment}{//go back to the main menu}}
+\DoxyCodeLine{56       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{57       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59   \}}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+
+
+References choice, get\+Thermal\+Image(), Camera\+::turn\+Off(), and Camera\+::turn\+On().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classThermalCamera_a11db09e03718ed4d388b44817a0fe448_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classThermalCamera_add511f9235091a184c70d4b90fed3fb1}\label{classThermalCamera_add511f9235091a184c70d4b90fed3fb1}} 
+\index{ThermalCamera@{ThermalCamera}!choice@{choice}}
+\index{choice@{choice}!ThermalCamera@{ThermalCamera}}
+\doxysubsubsection{\texorpdfstring{choice}{choice}}
+{\footnotesize\ttfamily int Thermal\+Camera\+::choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Thermal\+Camera.\+h.
+
+
+
+Referenced by show\+Choice().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ThermalCamera_8h}{Thermal\+Camera.\+h}}\item 
+\mbox{\hyperlink{ThermalCamera_8cpp}{Thermal\+Camera.\+cpp}}\end{DoxyCompactItemize}

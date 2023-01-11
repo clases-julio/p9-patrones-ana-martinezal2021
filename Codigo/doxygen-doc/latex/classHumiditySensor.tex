@@ -1,0 +1,262 @@
+\hypertarget{classHumiditySensor}{}\doxysection{Humidity\+Sensor Class Reference}
+\label{classHumiditySensor}\index{HumiditySensor@{HumiditySensor}}
+
+
+{\ttfamily \#include $<$Humidity\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Humidity\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classHumiditySensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Humidity\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classHumiditySensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}{Humidity\+Sensor}} ()
+\item 
+void \mbox{\hyperlink{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3}{check\+Humidity}} ()
+\item 
+void \mbox{\hyperlink{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1}{get\+Humidity}} ()
+\item 
+void \mbox{\hyperlink{classHumiditySensor_a6815f33d214bd301ed61354082869223}{show\+Choice}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}}
+\item 
+int \mbox{\hyperlink{classHumiditySensor_ab5e96ff4cfc696a3db619842d94ab8d6}{choice}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Humidity\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}\label{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}} 
+\index{HumiditySensor@{HumiditySensor}!HumiditySensor@{HumiditySensor}}
+\index{HumiditySensor@{HumiditySensor}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{HumiditySensor()}{HumiditySensor()}}
+{\footnotesize\ttfamily Humidity\+Sensor\+::\+Humidity\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 :\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of sensor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3}\label{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3}} 
+\index{HumiditySensor@{HumiditySensor}!checkHumidity@{checkHumidity}}
+\index{checkHumidity@{checkHumidity}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{checkHumidity()}{checkHumidity()}}
+{\footnotesize\ttfamily void Humidity\+Sensor\+::check\+Humidity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a random number to simulate de current humidity 
+
+Definition at line 11 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                   \{}
+\DoxyCodeLine{12   \textcolor{comment}{//create a random number}}
+\DoxyCodeLine{13   srand(time(NULL)+1);  }
+\DoxyCodeLine{14   \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}} = rand()\%101;}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+References humidity.
+
+
+
+Referenced by get\+Humidity().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1}\label{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1}} 
+\index{HumiditySensor@{HumiditySensor}!getHumidity@{getHumidity}}
+\index{getHumidity@{getHumidity}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{getHumidity()}{getHumidity()}}
+{\footnotesize\ttfamily void Humidity\+Sensor\+::get\+Humidity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the current humidity created with \mbox{\hyperlink{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3}{check\+Humidity()}} 
+
+Definition at line 17 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                                  \{}
+\DoxyCodeLine{18   \textcolor{comment}{//displays the current humidity created with checkHumidity()}}
+\DoxyCodeLine{19   \mbox{\hyperlink{classHumiditySensor_a83b47fdcceb55a744461301fc4c7d2f3}{checkHumidity}}();}
+\DoxyCodeLine{20   cout << \textcolor{stringliteral}{"{}\(\backslash\)nCurrent humidity: "{}} << \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}} << \textcolor{stringliteral}{"{}\%"{}} << endl;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+
+
+References check\+Humidity(), and humidity.
+
+
+
+Referenced by show\+Choice().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHumiditySensor_a6815f33d214bd301ed61354082869223}\label{classHumiditySensor_a6815f33d214bd301ed61354082869223}} 
+\index{HumiditySensor@{HumiditySensor}!showChoice@{showChoice}}
+\index{showChoice@{showChoice}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{showChoice()}{showChoice()}}
+{\footnotesize\ttfamily void Humidity\+Sensor\+::show\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the humidity sensor options menu Depending on the option that is entered, it calls its respective function 
+
+Definition at line 23 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                \{}
+\DoxyCodeLine{24   \textcolor{comment}{//displays the humidity sensor options menu}}
+\DoxyCodeLine{25   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{26     cout << \textcolor{stringliteral}{"{}\(\backslash\)n                \_   \_                    \_      \_  \_  \_          "{}} << endl}
+\DoxyCodeLine{27     << \textcolor{stringliteral}{"{}               | | | |                  (\_)    | |(\_)| |         "{}} << endl }
+\DoxyCodeLine{28     << \textcolor{stringliteral}{"{}               | |\_| | \_   \_  \_ \_\_ \_\_\_   \_   \_\_| | \_ | |\_  \_   \_ "{}} << endl }
+\DoxyCodeLine{29     << \textcolor{stringliteral}{"{}               |  \_  || | | || '\_ ` \_ \(\backslash\)\(\backslash\) | | / \_` || || \_\_|| | | |"{}} << endl }
+\DoxyCodeLine{30     << \textcolor{stringliteral}{"{}               | | | || |\_| || | | | | || || (\_| || || |\_ | |\_| |"{}} << endl }
+\DoxyCodeLine{31     << \textcolor{stringliteral}{"{}               \(\backslash\)\(\backslash\)\_| |\_/ \(\backslash\)\(\backslash\)\_\_,\_||\_| |\_| |\_||\_| \(\backslash\)\(\backslash\)\_\_,\_||\_| \(\backslash\)\(\backslash\)\_\_| \(\backslash\)\(\backslash\)\_\_, |"{}} << endl  }
+\DoxyCodeLine{32     << \textcolor{stringliteral}{"{}                                                            \_\_/ |"{}} << endl }
+\DoxyCodeLine{33     << \textcolor{stringliteral}{"{}                                                           |\_\_\_/ "{}} << endl }
+\DoxyCodeLine{34     << \textcolor{stringliteral}{"{}                                                                 "{}} <<endl}
+\DoxyCodeLine{35     << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl}
+\DoxyCodeLine{36     << \textcolor{stringliteral}{"{}ººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººººº\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{37     cout << \textcolor{stringliteral}{"{}                                   1. TURN ON"{}} << endl }
+\DoxyCodeLine{38         << \textcolor{stringliteral}{"{}                                   2. TURN OFF"{}} << endl }
+\DoxyCodeLine{39         << \textcolor{stringliteral}{"{}                                   3. SHOW CURRENT HUMIDITY"{}} << endl }
+\DoxyCodeLine{40         << \textcolor{stringliteral}{"{}                                   4. BACK TO MENU"{}} << endl;}
+\DoxyCodeLine{41     cout << \textcolor{stringliteral}{"{}Enter your choice number: "{}};}
+\DoxyCodeLine{42     cin >> \mbox{\hyperlink{classHumiditySensor_ab5e96ff4cfc696a3db619842d94ab8d6}{choice}};}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{44     \textcolor{comment}{//Depending on the option that is entered, it calls its respective function}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{switch} (\mbox{\hyperlink{classHumiditySensor_ab5e96ff4cfc696a3db619842d94ab8d6}{choice}})}
+\DoxyCodeLine{46     \{}
+\DoxyCodeLine{47     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{48       \mbox{\hyperlink{classSensor_ab687b1dd4e4ecb1d806bf947cedc9b76}{Sensor::turnOn}}();}
+\DoxyCodeLine{49       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{50       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{51       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{54       \mbox{\hyperlink{classSensor_a7e0dadfc3dcde4c6c7b20d0c0ae09082}{Sensor::turnOff}}();}
+\DoxyCodeLine{55       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{56       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{57       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{60       \mbox{\hyperlink{classHumiditySensor_a1fcf6b442f0e7d50cc3a8837ad339cb1}{getHumidity}}();}
+\DoxyCodeLine{61       system(\textcolor{stringliteral}{"{}sleep 3"{}});}
+\DoxyCodeLine{62       system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{63       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{66       \textcolor{comment}{//go back to the main menu}}
+\DoxyCodeLine{67       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{68       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70   \}}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+
+
+References choice, get\+Humidity(), Sensor\+::turn\+Off(), and Sensor\+::turn\+On().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHumiditySensor_a6815f33d214bd301ed61354082869223_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHumiditySensor_ab5e96ff4cfc696a3db619842d94ab8d6}\label{classHumiditySensor_ab5e96ff4cfc696a3db619842d94ab8d6}} 
+\index{HumiditySensor@{HumiditySensor}!choice@{choice}}
+\index{choice@{choice}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{choice}{choice}}
+{\footnotesize\ttfamily int Humidity\+Sensor\+::choice\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Humidity\+Sensor.\+h.
+
+
+
+Referenced by show\+Choice().
+
+\mbox{\Hypertarget{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}\label{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}} 
+\index{HumiditySensor@{HumiditySensor}!humidity@{humidity}}
+\index{humidity@{humidity}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{humidity}{humidity}}
+{\footnotesize\ttfamily float Humidity\+Sensor\+::humidity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Humidity\+Sensor.\+h.
+
+
+
+Referenced by check\+Humidity(), and get\+Humidity().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{HumiditySensor_8h}{Humidity\+Sensor.\+h}}\item 
+\mbox{\hyperlink{HumiditySensor_8cpp}{Humidity\+Sensor.\+cpp}}\end{DoxyCompactItemize}

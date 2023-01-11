@@ -1,0 +1,10 @@
+<map id="Camera.h" name="Camera.h">
+<area shape="rect" id="node1" title="defines the camera class with its attributes, methods, and constructor" alt="" coords="242,5,327,32"/>
+<area shape="rect" id="node2" href="$Camera_8cpp.html" title=" " alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="231,155,314,181"/>
+<area shape="rect" id="node4" href="$RGBCamera_8cpp.html" title=" " alt="" coords="79,155,207,181"/>
+<area shape="rect" id="node5" href="$RGBCamera_8h.html" title="defines the RGBCamera class, wich is is inherited from the camera class, with its attributes,..." alt="" coords="181,80,295,107"/>
+<area shape="rect" id="node7" href="$ThermalCamera_8cpp.html" title=" " alt="" coords="481,155,635,181"/>
+<area shape="rect" id="node8" href="$ThermalCamera_8h.html" title="defines the ThermalCamera class, wich is is inherited from the camera class, with its attributes,..." alt="" coords="370,80,509,107"/>
+<area shape="rect" id="node6" href="$Dashboard_8cpp.html" title=" " alt="" coords="339,155,457,181"/>
+</map>

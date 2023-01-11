@@ -1,0 +1,7 @@
+<map id="Sensor::turnOn" name="Sensor::turnOn">
+<area shape="rect" id="node1" title=" " alt="" coords="272,97,391,123"/>
+<area shape="rect" id="node2" href="$classAirConditionSensor.html#aaa1605a7b9b7361946301505de89b82a" title=" " alt="" coords="41,5,188,47"/>
+<area shape="rect" id="node3" href="$classHumiditySensor.html#a6815f33d214bd301ed61354082869223" title=" " alt="" coords="9,71,221,98"/>
+<area shape="rect" id="node4" href="$classLigthLevelSensor.html#a56555c1ec2b46fa92e0d5b34bf2d2822" title=" " alt="" coords="5,122,224,149"/>
+<area shape="rect" id="node5" href="$classTemperatureSensor.html#a0857ea864b206af421d685b975bb93b7" title=" " alt="" coords="37,173,193,215"/>
+</map>
