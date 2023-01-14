@@ -27,7 +27,10 @@ public:
   */
   void turnOff();
   
-  const void getInfo();
+	/**
+  * Displays the sensor info (polymorphism)
+  */
+  virtual void getInfo();
 
 private:
   //class attributes

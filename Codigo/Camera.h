@@ -26,8 +26,11 @@ public:
   * Depending on the state of the camera, we turn it off and indicate its state
   */
   void turnOff();
-  
-  const void getInfo();
+
+	/**
+  * Displays the camera info (polymorphism)
+  */  
+  virtual void getInfo();
 
 private:
   //class attributes

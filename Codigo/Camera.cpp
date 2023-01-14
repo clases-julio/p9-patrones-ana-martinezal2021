@@ -24,4 +24,4 @@ void Camera::turnOff() {
   }
 }
 
-const void Camera::getInfo(){};
+void Camera::getInfo(){};

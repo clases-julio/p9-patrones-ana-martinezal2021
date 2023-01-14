@@ -24,4 +24,4 @@ void Sensor::turnOff() {
   }
 }
 
-const void Sensor::getInfo(){}
+void Sensor::getInfo(){}

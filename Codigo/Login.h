@@ -25,11 +25,6 @@ public:
   */
   bool checkLogin(DataBase*);
 
-  /**
-  * Show the extra admin option in case the user entered is an admin
-  */
-  void adminMenu(DataBase*);
-
 private:
   //class attributes
   std::string userNumberStr;

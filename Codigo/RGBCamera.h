@@ -18,20 +18,13 @@ class RGBCamera : public Camera {
 public:
   RGBCamera();//RGB camera class constructor
   //class functions
-
-  /**
-  * Displays the RGB camera options menu  
-  * Depending on the option that is entered, it calls its respective function.
-  */
-  void showChoice();
   
   /**
   * Displays the "thermal image"
   */
-  const void getInfo();
+  void getInfo();
 
 private:
-  //class attributes
-  int choice;
+
 };
 #endif

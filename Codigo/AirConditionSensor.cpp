@@ -3,12 +3,12 @@
 #include "Sensor.h"
 #include <iostream>
 #include <stdlib.h>
-#include<time.h>
+
 using namespace std;
 
 AirConditionSensor::AirConditionSensor():Sensor() {} //we define the constructor indicating that it is an inherit class of sensor
 
-const void AirConditionSensor::getInfo(){
+void AirConditionSensor::getInfo(){
   srand(time(NULL)+3); 
   airCondition = rand()%301;
   cout << "\nCurrent air condition level: " << airCondition << " ppm" << endl;

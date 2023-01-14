@@ -21,7 +21,7 @@ Dashboard::Dashboard(){ //we define the constructor
   this -> option = option;
 }
 
-void Dashboard::showSensorChoices(Sensor sensor){
+void Dashboard::showSensorChoices(Sensor* sensor){
   //displays the temperature sensor options menu
   while (true) {
     cout << "                               __  __  _____  _   _  _   _ " << endl 
@@ -43,19 +43,20 @@ void Dashboard::showSensorChoices(Sensor sensor){
     switch (choice)
     {
     case 1:
-      sensor.turnOn();
+      sensor->turnOn();
       system("sleep 3");
       system("clear");
       break;
 
     case 2:
-      sensor.turnOff();
+      sensor->turnOff();
       system("sleep 3");
       system("clear");
       break;
 
     case 3:
-      sensor.Sensor::getInfo();
+      sensor->getInfo();
+      cout.flush();
       system("sleep 3");
       system("clear");
       break;
@@ -68,7 +69,7 @@ void Dashboard::showSensorChoices(Sensor sensor){
   }
 }
 
-void Dashboard::showCameraChoices(Camera camera){
+void Dashboard::showCameraChoices(Camera* camera){
   //displays the temperature sensor options menu
   while (true) {
     cout << "                               __  __  _____  _   _  _   _ " << endl 
@@ -90,19 +91,19 @@ void Dashboard::showCameraChoices(Camera camera){
     switch (choice)
     {
     case 1:
-      camera.turnOn();
+      camera->turnOn();
       system("sleep 3");
       system("clear");
       break;
 
     case 2:
-      camera.turnOff();
+      camera->turnOff();
       system("sleep 3");
       system("clear");
       break;
 
     case 3:
-      camera.getInfo();
+      camera->getInfo();
       system("sleep 3");
       system("clear");
       break;

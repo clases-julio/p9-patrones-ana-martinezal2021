@@ -18,21 +18,14 @@ class TemperatureSensor : public Sensor {
 public:
   TemperatureSensor();//temperature sensor class constructor
   //class functions
-
-  /**
-  * Displays the temperature sensor options menu 
-  * Depending on the option that is entered, it calls its respective function
-  */
-  void showChoice();
   
   /**
   * Creates a random number to simulate de current temperature and displays it
   */
-  const void getInfo();
+  void getInfo();
   
 private:
   //class attributes
   float temperature;
-  int choice;
 };
 #endif

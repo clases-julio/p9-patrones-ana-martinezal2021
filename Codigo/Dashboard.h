@@ -34,12 +34,12 @@ public:
   /**
   * Displays the sensor options menu and performs the action depending on the option entered
   */
-  void showSensorChoices(Sensor sensor);
+  void showSensorChoices(Sensor*);
   
   /**
   * Displays the camera options menu and performs the action depending on the option entered
   */
-  void showCameraChoices(Camera camera);
+  void showCameraChoices(Camera*);
   
   Dashboard (Dashboard &otherDashboard) = delete;
   void operator= (const Dashboard&) = delete;
@@ -52,15 +52,15 @@ private:
   int option;
   int choice;
   static Dashboard* singleDashboard;
-  //constructors of all used classes
+  //constructors and pointers of all used classes
   Login L;
   DataBase D;
-  TemperatureSensor T;
-  HumiditySensor H;
-  LigthLevelSensor Li;
-  AirConditionSensor A;
-  RGBCamera RC;
-  ThermalCamera TC;
+  TemperatureSensor* T = new TemperatureSensor();
+  HumiditySensor* H = new HumiditySensor();
+  LigthLevelSensor* Li = new LigthLevelSensor();
+  AirConditionSensor* A = new AirConditionSensor();
+  RGBCamera* RC = new RGBCamera();
+  ThermalCamera* TC = new ThermalCamera();
   Microphone M;
   
 };
