@@ -55,7 +55,7 @@ A lo largo de la asignatura hemos ido implementando diferentes métodos o requis
 
 * **Herencia y polimorfismo**: ambos téminos van ligados y son básicos para una programación base del sistema. La herencia nos premite reutilizar el software ya que se crean clases nuevas que heredan datos y comportamientos de una clase padre; además de poder añadir los suyos propios o modificar sobre estos. El polimorfismo permite programar en general en lugar de específicamente y, procesar obj. de clases que formen parte de una jerarquía como si todos fueran objetos de la clase base de dicha jerarquía. 
 
-Esto se ve principalmente en la creación de los sensores o las cámaras. Las diferentes clases hijas que hay, según el tipo, heredan de las calses padre y modifican algún método de estos, adaptándolos individualmente sin tener que crealos específicamente para cada uno. Esto en un futuro ayuda a reutilizar el código sin necesidad de cambiarlo demasiado.
+	Esto se ve principalmente en la creación de los sensores o las cámaras. Las diferentes clases hijas que hay, según el tipo, heredan de las calses 	  padre y modifican algún método de estos, adaptándolos individualmente sin tener que crealos específicamente para cada uno. Esto en un 		futuro ayuda a reutilizar el código sin necesidad de cambiarlo demasiado.
 
 * **Sobrecarga de operadores y/o flujo**: La sobrecarga nos ayuda a lograr un código más claro que con llamadas a funciones y en algunos casos como es este, debemos utilizarla también ya que la colección __set__ para almacenar los datos del sistema lo requiere con el operador <. El __set__, emplea este operador para comparar y verificar que no haya duplicados en la colección. Por lo tanto se ha de sobrecargar dicho operador, dándole otro uso distinto al común como es el de "menor que".
 
@@ -66,6 +66,8 @@ Esto se ve principalmente en la creación de los sensores o las cámaras. Las di
 * **Depuración con GDB**: Nos ayuda a encontrar los errores lógicos de nuestro sistema o __bugs__. Además, con el uso de diveros comandos podemos seguir el flujo de nuestro sistema paso a paso y analizarlo detenidamente para así dar con el problema y tenerlo localizado en nuestro código. Esto es algo que ha sido muy útil a la hora de correr el sistema y ver que no realizaba lo que queríamos o se modificaban cosas en ciertos puntos sin darnos cuenta haciendo que no funcionara adecuadamente.
 
 * **Documentación Doxygen y UML**: Esto nos ayuda a tener todo lo relativo a nuestro programa documentado. El Doxygen genera de manera automática la documentación a partir de los códigos del programa y crea un pdf con LATEX y una dirección html a la documentación. El UML es el diagrama de clases del sistema en el que se puedem ver tanto las herencias como el uso de clases entre si, además de todos sus atributos y métodos sin desarrollar.
+
+![DiagramaDeClases_JulioVeganosEHijos](https://user-images.githubusercontent.com/92941166/213264232-7c7ce2de-e87d-40a6-b40a-b96380773aa0.jpg)
 
 ### Uso del sistema
 
@@ -112,6 +114,6 @@ Los datos de los usuarios que se encuentran actualmente en el archivo y que son 
   4   /  Pablo    /   Employee    /    11223344
 
 ## Documentación
-Para poder visualizar la documentación del sistema, tenemos el UML en la carpeta __doc/uml__, donde se encuntra la imagen JPG del diagrama de clases y el archivo .uxf para abrirlo en UMLet. Por otro lado dentro de la carpeta __/doc__ están las carpetas __/doc/doxygen-doc/hmtl__ y __/doc/doxygen-doc/latex/__ . Si queremos ver la documentación en la página de firefox debemos meternos en la carpeta de html e introducir el siguiente comando: __$firefox index.html__ .
+Para poder visualizar la documentación del sistema, tenemos el UML en la carpeta __../doc/uml__, donde se encuntra la imagen JPG del diagrama de clases y el archivo .uxf para abrirlo en UMLet. Por otro lado dentro de la carpeta __../doc__ están las carpetas __../doc/doxygen-doc/hmtl__ y __../doc/doxygen-doc/latex/__ . Si queremos ver la documentación en la página de firefox debemos meternos en la carpeta de html e introducir el siguiente comando: __$firefox index.html__ .
 Para ver el pdf de LATEX debemos meterlos en la carpeta de latex e introducir el siguiente comando: __$make && evince refman.pdf__ .
 
