@@ -1,7 +1,0 @@
-<map id="AirConditionSensor::showChoice" name="AirConditionSensor::showChoice">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,152,105"/>
-<area shape="rect" id="node2" href="$classAirConditionSensor.html#a320e5f933fa2be855ddae11bb24ef841" title=" " alt="" coords="200,5,347,47"/>
-<area shape="rect" id="node4" href="$classSensor.html#a7e0dadfc3dcde4c6c7b20d0c0ae09082" title=" " alt="" coords="214,71,333,98"/>
-<area shape="rect" id="node5" href="$classSensor.html#ab687b1dd4e4ecb1d806bf947cedc9b76" title=" " alt="" coords="214,122,333,149"/>
-<area shape="rect" id="node3" href="$classAirConditionSensor.html#ab9b7386ed63db271a746a9b5587769d6" title=" " alt="" coords="395,5,543,47"/>
-</map>

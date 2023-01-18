@@ -1,7 +1,0 @@
-<map id="Sensor" name="Sensor">
-<area shape="rect" id="node1" title=" " alt="" coords="319,5,411,112"/>
-<area shape="rect" id="node2" href="$classAirConditionSensor.html" title=" " alt="" coords="5,160,176,296"/>
-<area shape="rect" id="node3" href="$classHumiditySensor.html" title=" " alt="" coords="201,160,351,296"/>
-<area shape="rect" id="node4" href="$classLigthLevelSensor.html" title=" " alt="" coords="375,160,534,296"/>
-<area shape="rect" id="node5" href="$classTemperatureSensor.html" title=" " alt="" coords="559,160,732,296"/>
-</map>

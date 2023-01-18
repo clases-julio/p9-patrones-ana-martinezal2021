@@ -1,5 +1,0 @@
-<map id="Camera" name="Camera">
-<area shape="rect" id="node1" title=" " alt="" coords="111,5,210,112"/>
-<area shape="rect" id="node2" href="$classRGBCamera.html" title=" " alt="" coords="5,160,143,267"/>
-<area shape="rect" id="node3" href="$classThermalCamera.html" title=" " alt="" coords="167,160,330,267"/>
-</map>

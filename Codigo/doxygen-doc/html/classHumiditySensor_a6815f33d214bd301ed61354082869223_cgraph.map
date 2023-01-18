@@ -1,7 +1,0 @@
-<map id="HumiditySensor::showChoice" name="HumiditySensor::showChoice">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,217,83"/>
-<area shape="rect" id="node2" href="$classHumiditySensor.html#a1fcf6b442f0e7d50cc3a8837ad339cb1" title=" " alt="" coords="265,5,480,32"/>
-<area shape="rect" id="node4" href="$classSensor.html#a7e0dadfc3dcde4c6c7b20d0c0ae09082" title=" " alt="" coords="313,56,432,83"/>
-<area shape="rect" id="node5" href="$classSensor.html#ab687b1dd4e4ecb1d806bf947cedc9b76" title=" " alt="" coords="313,107,432,133"/>
-<area shape="rect" id="node3" href="$classHumiditySensor.html#a83b47fdcceb55a744461301fc4c7d2f3" title=" " alt="" coords="528,5,760,32"/>
-</map>
