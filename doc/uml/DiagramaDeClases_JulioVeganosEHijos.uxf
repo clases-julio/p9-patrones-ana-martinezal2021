@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>235</x>
+      <y>170</y>
+      <w>100</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>/Sensor/
+--
+-state: bool
+
+--
+/+Sensor(): constructor/
+/+turnOn(): void/
+/+turnOff(): void/
+/+virtual getInfo(): void/
+
+--
+Responsabilities
+-- Main class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>295</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Humidity
+--
+-humidity: float
+
+--
+/HumiditySensor(): constructor/
+/+getInfo():void/
+
+--
+Responsabilities
+-- Hardware Item</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>265</x>
+      <y>295</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>LigthLevel
+--
+-ligthLevel: float
+
+--
+/LigthLevelSensor(): constructor/
+/+getInfo():void/
+
+--
+Responsabilities
+-- Hardware Item</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>295</y>
+      <w>125</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>AirCondition
+--
+-airCondition: float
+
+--
+/AirConditionSensor(): constructor/
+/+getInfo():void/
+
+--
+Responsabilities
+-- Hardware Item</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>505</y>
+      <w>105</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>RGBCamera
+--
+/RGBCamera: constructor/
+/+getInfo(): void/
+
+--
+Responsabilities
+-- Hardware Item
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>275</x>
+      <y>505</y>
+      <w>110</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>ThermalCamera
+--
+/ThermalCamera: constructor/
+/+getInfo(): void/
+
+--
+Responsabilities
+-- Hardware Item</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>295</y>
+      <w>135</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Temperature
+--
+-temperature: float
+
+--
+/TemperatureSensor(): constructor/
+/+getInfo(): void/
+
+--
+Responsabilities
+-- Hardware Item
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>545</x>
+      <y>500</y>
+      <w>185</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>/Dashboard/
+--
+-option: int
+-choice: int
+-Login L
+-DataBase D
+-TemperatureSensor* T
+-HumiditySensor* H
+-LigthLevelSensor* Li
+-AirConditionSensor* A
+-RGBCamera* RC
+-ThermalCamera* TC
+-Microphone M
+-Dashboard* singleDashboard: static;
+  
+--
+/#Dashboard()/
+/+showMenu(): void/
+/+getOption(): bool/
+/+showSensorChoices(Sensor*): void/
+/+showCameraChoices(Camera*):void/
+/+Dashboard()/
+/+operator= (): void/
+
+--
+Responsabilities
+-- Main Interface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>325</y>
+      <w>105</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>/Microphone/
+--
+-sound: string
+-choice: int
+-state: bool
+
+--
+/+Microphone(): constructor/
+/+showChoice(): void/
+/+getSound(): void/
+/+turnOn(): void/
+/+turnOff(): void/
+
+--
+Responsabilities
+-- Hardware Item
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>620</y>
+      <w>150</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>/User/
+--
+-userNumber: int
+-NIF: int;
+-name[10]: char;
+-isAdmin: bool;
+
+--
+/+User(): constructor/
+/+getUserNum(): int/
+/+getNIF(): int/
+/+checkAdmin(): bool/
+/+getUserName(): string/
+/+showUser(): void/
+/+operator&lt; (const User &amp;) const: bool/
+
+--
+Responsabilities
+-- User interface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>480</y>
+      <w>105</w>
+      <h>115</h>
+    </coordinates>
+    <panel_attributes>/Login/
+--
+-userName: int
+-NIF: int
+-userNumberStr: string;
+-NIFStr: string;
+-userNow: User;
+-User* userNowPtr;
+--
+/+Login(): constructor/
+/+checkLogin(DataBase*): bool/
+
+--
+Responsabilities
+-- Login interface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>265</y>
+      <w>135</w>
+      <h>205</h>
+    </coordinates>
+    <panel_attributes>/DataBase/
+--
+-set dataBaseUser: User
+-set&lt;User&gt;::iterator it
+-choice: int
+-userNumberStr: string
+-NIFStr: string
+-userNumber: int
+-NIF: int
+-name: string
+-type: int
+-isAdmin: bool
+
+--
+/+DataBase(): constructor/
+/+checkUser(int, int): bool/
+/+addUser(string, string, string, bool): void/
+/+deleteUser(int): void/
+/+showUsers(): void/
+/+showAdminChoices(): void/
+/+saveFile(): void/
++userNow: User
++userDeleted :User
+
+--
+Responsabilities
+-- Server
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>640</y>
+      <w>100</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>/Camera/
+--
+-state: bool
+
+--
+/Camera(): constructor/
+/+turnOn(): void/
+/+turnOff(): void/
+/+virtual getInfo(): void/
+
+--
+Responsabilities
+-- Main class</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>280</y>
+      <w>390</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;760.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>575</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>610</y>
+      <w>125</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>575</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>275</x>
+      <y>260</y>
+      <w>15</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>275</x>
+      <y>615</y>
+      <w>15</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>615</x>
+      <y>415</y>
+      <w>15</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>485</y>
+      <w>15</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>590</y>
+      <w>15</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>75</x>
+      <y>405</y>
+      <w>385</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;750.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>285</y>
+      <w>15</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>285</y>
+      <w>15</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>285</y>
+      <w>15</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>445</x>
+      <y>285</y>
+      <w>15</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>415</x>
+      <y>605</y>
+      <w>140</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>260.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>410</y>
+      <w>15</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>75</x>
+      <y>370</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>370</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>370</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>445</x>
+      <y>370</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>480</y>
+      <w>125</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>485</y>
+      <w>15</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>885</x>
+      <y>465</y>
+      <w>35</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;470.0;50.0;470.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>445</y>
+      <w>160</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>300.0;340.0;300.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>705</y>
+      <w>85</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>665</x>
+      <y>455</y>
+      <w>115</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>210.0;50.0;210.0;20.0;10.0;20.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>235</y>
+      <w>355</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>690.0;60.0;690.0;20.0;10.0;20.0;10.0;640.0;50.0;640.0</additional_attributes>
+  </element>
+</diagram>
