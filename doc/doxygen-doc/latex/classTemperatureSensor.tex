@@ -1,0 +1,116 @@
+\hypertarget{classTemperatureSensor}{}\doxysection{Temperature\+Sensor Class Reference}
+\label{classTemperatureSensor}\index{TemperatureSensor@{TemperatureSensor}}
+
+
+{\ttfamily \#include $<$Temperature\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Temperature\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classTemperatureSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Temperature\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classTemperatureSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemperatureSensor_a2f8ba8784c8e8aebd3f88c402fb8319b}{Temperature\+Sensor}} ()
+\item 
+void \mbox{\hyperlink{classTemperatureSensor_a83f91897a8ccc0bce53373edcb45b714}{get\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classTemperatureSensor_a3afb3584d457ba2851a8c86f7fc6ff1b}{temperature}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Temperature\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemperatureSensor_a2f8ba8784c8e8aebd3f88c402fb8319b}\label{classTemperatureSensor_a2f8ba8784c8e8aebd3f88c402fb8319b}} 
+\index{TemperatureSensor@{TemperatureSensor}!TemperatureSensor@{TemperatureSensor}}
+\index{TemperatureSensor@{TemperatureSensor}!TemperatureSensor@{TemperatureSensor}}
+\doxysubsubsection{\texorpdfstring{TemperatureSensor()}{TemperatureSensor()}}
+{\footnotesize\ttfamily Temperature\+Sensor\+::\+Temperature\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Temperature\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 :\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of sensor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemperatureSensor_a83f91897a8ccc0bce53373edcb45b714}\label{classTemperatureSensor_a83f91897a8ccc0bce53373edcb45b714}} 
+\index{TemperatureSensor@{TemperatureSensor}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!TemperatureSensor@{TemperatureSensor}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily void Temperature\+Sensor\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a random number to simulate de current temperature and displays it 
+
+Reimplemented from \mbox{\hyperlink{classSensor_a1fb11aadd1b30f2d650c4faf9358371f}{Sensor}}.
+
+
+
+Definition at line 11 of file Temperature\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                \{}
+\DoxyCodeLine{12   srand(time(NULL));}
+\DoxyCodeLine{13   \mbox{\hyperlink{classTemperatureSensor_a3afb3584d457ba2851a8c86f7fc6ff1b}{temperature}} = 25+rand()\%(40 +1 -\/ 25); }
+\DoxyCodeLine{14   cout << \textcolor{stringliteral}{"{}\(\backslash\)nCurrent temperature: "{}} << \mbox{\hyperlink{classTemperatureSensor_a3afb3584d457ba2851a8c86f7fc6ff1b}{temperature}} << \textcolor{stringliteral}{"{} ºC"{}} << endl; }
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+References temperature.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTemperatureSensor_a3afb3584d457ba2851a8c86f7fc6ff1b}\label{classTemperatureSensor_a3afb3584d457ba2851a8c86f7fc6ff1b}} 
+\index{TemperatureSensor@{TemperatureSensor}!temperature@{temperature}}
+\index{temperature@{temperature}!TemperatureSensor@{TemperatureSensor}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily float Temperature\+Sensor\+::temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Temperature\+Sensor.\+h.
+
+
+
+Referenced by get\+Info().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TemperatureSensor_8h}{Temperature\+Sensor.\+h}}\item 
+\mbox{\hyperlink{TemperatureSensor_8cpp}{Temperature\+Sensor.\+cpp}}\end{DoxyCompactItemize}

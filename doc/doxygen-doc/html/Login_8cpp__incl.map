@@ -1,0 +1,10 @@
+<map id="Login.cpp" name="Login.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="151,5,235,32"/>
+<area shape="rect" id="node2" href="$Login_8h.html" title="defines the login class with its attributes, methods, and constructor" alt="" coords="110,80,179,107"/>
+<area shape="rect" id="node3" href="$DataBase_8h.html" title="defines the database class with its attributes, methods, and constructor" alt="" coords="24,155,121,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="82,304,162,331"/>
+<area shape="rect" id="node7" href="$StringException_8h.html" title="defines the string exception class with its constructor" alt="" coords="278,80,414,107"/>
+<area shape="rect" id="node5" href="$User_8h.html" title="defines the user class with its attributes, methods, and constructor" alt="" coords="23,229,85,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="110,229,153,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="303,155,389,181"/>
+</map>

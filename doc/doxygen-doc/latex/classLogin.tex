@@ -1,0 +1,196 @@
+\hypertarget{classLogin}{}\doxysection{Login Class Reference}
+\label{classLogin}\index{Login@{Login}}
+
+
+{\ttfamily \#include $<$Login.\+h$>$}
+
+
+
+Collaboration diagram for Login\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classLogin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLogin_a4847f3e07e43b540d3339392346f87ff}{Login}} ()
+\item 
+bool \mbox{\hyperlink{classLogin_a0da5d78c5cafad08f3ec60e6f2d29671}{check\+Login}} (\mbox{\hyperlink{classDataBase}{Data\+Base}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{user\+Number\+Str}}
+\item 
+std\+::string \mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}}
+\item 
+int \mbox{\hyperlink{classLogin_acf9de7a94aba337739fff92ac4a3060e}{user\+Number}}
+\item 
+int \mbox{\hyperlink{classLogin_a52e53254d3e08f0930b1cc95684460b4}{NIF}}
+\item 
+\mbox{\hyperlink{classUser}{User}} \mbox{\hyperlink{classLogin_a0dcf38c3c9741547aecda569b1a7c4f4}{user\+Now}}
+\item 
+\mbox{\hyperlink{classUser}{User}} $\ast$ \mbox{\hyperlink{classLogin_a2c85674d322dc470b2f83eab18b41a0e}{user\+Now\+Ptr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Login.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLogin_a4847f3e07e43b540d3339392346f87ff}\label{classLogin_a4847f3e07e43b540d3339392346f87ff}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{\} \textcolor{comment}{//we define the constructor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLogin_a0da5d78c5cafad08f3ec60e6f2d29671}\label{classLogin_a0da5d78c5cafad08f3ec60e6f2d29671}} 
+\index{Login@{Login}!checkLogin@{checkLogin}}
+\index{checkLogin@{checkLogin}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{checkLogin()}{checkLogin()}}
+{\footnotesize\ttfamily bool Login\+::check\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDataBase}{Data\+Base}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+Returns if the login is correct 
+
+Definition at line 10 of file Login.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                                  \{}
+\DoxyCodeLine{11   \textcolor{keywordtype}{bool} excep = \textcolor{keyword}{true};}
+\DoxyCodeLine{12   \textcolor{keywordflow}{while} (excep == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{14       cout<<\textcolor{stringliteral}{"{}\(\backslash\)n                                User: "{}};}
+\DoxyCodeLine{15       cin>>\mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{userNumberStr}};}
+\DoxyCodeLine{16       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n = 0; n < \mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{userNumberStr}}.length(); n++)\{}
+\DoxyCodeLine{17         \textcolor{keywordflow}{if}(\textcolor{keywordtype}{int}(\mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{userNumberStr}}[n]) < 47 || \textcolor{keywordtype}{int}(\mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{userNumberStr}}[n] > 57))\{}
+\DoxyCodeLine{18           \textcolor{keywordflow}{throw} \mbox{\hyperlink{classStringException}{StringException}}();}
+\DoxyCodeLine{19           excep = \textcolor{keyword}{false};}
+\DoxyCodeLine{20         \}}
+\DoxyCodeLine{21         \mbox{\hyperlink{classLogin_acf9de7a94aba337739fff92ac4a3060e}{userNumber}} = stoi(\mbox{\hyperlink{classLogin_ab52cd77230a1d24811f70921f5277673}{userNumberStr}});}
+\DoxyCodeLine{22       \}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24       \textcolor{comment}{//returns the password entered}}
+\DoxyCodeLine{25       cout<<\textcolor{stringliteral}{"{}                                Password: "{}};}
+\DoxyCodeLine{26       cin>>\mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}};}
+\DoxyCodeLine{27       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} n = 0; n < \mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}}.length(); n++)\{}
+\DoxyCodeLine{28         \textcolor{keywordflow}{if}(\textcolor{keywordtype}{int}(\mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}}[n]) < 47 || \textcolor{keywordtype}{int}(\mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}}[n] > 57))\{}
+\DoxyCodeLine{29           \textcolor{keywordflow}{throw} \mbox{\hyperlink{classStringException}{StringException}}();}
+\DoxyCodeLine{30           excep = \textcolor{keyword}{false};}
+\DoxyCodeLine{31         \}}
+\DoxyCodeLine{32         \mbox{\hyperlink{classLogin_a52e53254d3e08f0930b1cc95684460b4}{NIF}} = stoi(\mbox{\hyperlink{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}{NIFStr}});}
+\DoxyCodeLine{33       \}}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36     \textcolor{keywordflow}{catch}(\mbox{\hyperlink{classStringException}{StringException}} \&except)\{}
+\DoxyCodeLine{37       cout << \textcolor{stringliteral}{"{}Exception: "{}} << except.what() << endl;}
+\DoxyCodeLine{38       \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordflow}{return} d-\/>\mbox{\hyperlink{classDataBase_a0aa5da853cbbc3dc06afdb601a6b4631}{checkUser}}(\mbox{\hyperlink{classLogin_acf9de7a94aba337739fff92ac4a3060e}{userNumber}}, \mbox{\hyperlink{classLogin_a52e53254d3e08f0930b1cc95684460b4}{NIF}});}
+\DoxyCodeLine{42   \}}
+\DoxyCodeLine{43   \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+
+
+References Data\+Base\+::check\+User().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classLogin_a0da5d78c5cafad08f3ec60e6f2d29671_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLogin_a52e53254d3e08f0930b1cc95684460b4}\label{classLogin_a52e53254d3e08f0930b1cc95684460b4}} 
+\index{Login@{Login}!NIF@{NIF}}
+\index{NIF@{NIF}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{NIF}{NIF}}
+{\footnotesize\ttfamily int Login\+::\+NIF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}\label{classLogin_ab69dc0b27eab4171eb137712f76ab1b1}} 
+\index{Login@{Login}!NIFStr@{NIFStr}}
+\index{NIFStr@{NIFStr}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{NIFStr}{NIFStr}}
+{\footnotesize\ttfamily std\+::string Login\+::\+NIFStr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a0dcf38c3c9741547aecda569b1a7c4f4}\label{classLogin_a0dcf38c3c9741547aecda569b1a7c4f4}} 
+\index{Login@{Login}!userNow@{userNow}}
+\index{userNow@{userNow}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{userNow}{userNow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} Login\+::user\+Now\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_a2c85674d322dc470b2f83eab18b41a0e}\label{classLogin_a2c85674d322dc470b2f83eab18b41a0e}} 
+\index{Login@{Login}!userNowPtr@{userNowPtr}}
+\index{userNowPtr@{userNowPtr}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{userNowPtr}{userNowPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}}$\ast$ Login\+::user\+Now\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_acf9de7a94aba337739fff92ac4a3060e}\label{classLogin_acf9de7a94aba337739fff92ac4a3060e}} 
+\index{Login@{Login}!userNumber@{userNumber}}
+\index{userNumber@{userNumber}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{userNumber}{userNumber}}
+{\footnotesize\ttfamily int Login\+::user\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Login.\+h.
+
+\mbox{\Hypertarget{classLogin_ab52cd77230a1d24811f70921f5277673}\label{classLogin_ab52cd77230a1d24811f70921f5277673}} 
+\index{Login@{Login}!userNumberStr@{userNumberStr}}
+\index{userNumberStr@{userNumberStr}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{userNumberStr}{userNumberStr}}
+{\footnotesize\ttfamily std\+::string Login\+::user\+Number\+Str\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Login.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Login_8h}{Login.\+h}}\item 
+\mbox{\hyperlink{Login_8cpp}{Login.\+cpp}}\end{DoxyCompactItemize}

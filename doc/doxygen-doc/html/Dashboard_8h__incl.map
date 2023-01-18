@@ -1,0 +1,8 @@
+<map id="Dashboard.h" name="Dashboard.h">
+<area shape="rect" id="node1" title="defines the dashboard class with its attributes, methods, and constructor" alt="" coords="141,5,245,32"/>
+<area shape="rect" id="node2" href="$Login_8h.html" title="defines the login class with its attributes, methods, and constructor" alt="" coords="110,80,179,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="82,304,162,331"/>
+<area shape="rect" id="node3" href="$DataBase_8h.html" title="defines the database class with its attributes, methods, and constructor" alt="" coords="31,155,128,181"/>
+<area shape="rect" id="node5" href="$User_8h.html" title="defines the user class with its attributes, methods, and constructor" alt="" coords="23,229,85,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="110,229,153,256"/>
+</map>

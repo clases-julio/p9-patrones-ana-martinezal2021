@@ -1,0 +1,116 @@
+\hypertarget{classAirConditionSensor}{}\doxysection{Air\+Condition\+Sensor Class Reference}
+\label{classAirConditionSensor}\index{AirConditionSensor@{AirConditionSensor}}
+
+
+{\ttfamily \#include $<$Air\+Condition\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Air\+Condition\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classAirConditionSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Air\+Condition\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classAirConditionSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAirConditionSensor_a5e8e6fcbdfdd55433a1e3a45e7c72e6b}{Air\+Condition\+Sensor}} ()
+\item 
+void \mbox{\hyperlink{classAirConditionSensor_a09a237f1193528bef2667591e805c1a9}{get\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classAirConditionSensor_a76aa91cfb1a6f622be991322d7bcc536}{air\+Condition}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Air\+Condition\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAirConditionSensor_a5e8e6fcbdfdd55433a1e3a45e7c72e6b}\label{classAirConditionSensor_a5e8e6fcbdfdd55433a1e3a45e7c72e6b}} 
+\index{AirConditionSensor@{AirConditionSensor}!AirConditionSensor@{AirConditionSensor}}
+\index{AirConditionSensor@{AirConditionSensor}!AirConditionSensor@{AirConditionSensor}}
+\doxysubsubsection{\texorpdfstring{AirConditionSensor()}{AirConditionSensor()}}
+{\footnotesize\ttfamily Air\+Condition\+Sensor\+::\+Air\+Condition\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Air\+Condition\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 :\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of sensor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAirConditionSensor_a09a237f1193528bef2667591e805c1a9}\label{classAirConditionSensor_a09a237f1193528bef2667591e805c1a9}} 
+\index{AirConditionSensor@{AirConditionSensor}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!AirConditionSensor@{AirConditionSensor}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily void Air\+Condition\+Sensor\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a random number to simulate de current air condition and displays it 
+
+Reimplemented from \mbox{\hyperlink{classSensor_a1fb11aadd1b30f2d650c4faf9358371f}{Sensor}}.
+
+
+
+Definition at line 11 of file Air\+Condition\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                 \{}
+\DoxyCodeLine{12   srand(time(NULL)+3); }
+\DoxyCodeLine{13   \mbox{\hyperlink{classAirConditionSensor_a76aa91cfb1a6f622be991322d7bcc536}{airCondition}} = rand()\%301;}
+\DoxyCodeLine{14   cout << \textcolor{stringliteral}{"{}\(\backslash\)nCurrent air condition level: "{}} << \mbox{\hyperlink{classAirConditionSensor_a76aa91cfb1a6f622be991322d7bcc536}{airCondition}} << \textcolor{stringliteral}{"{} ppm"{}} << endl;}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+References air\+Condition.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAirConditionSensor_a76aa91cfb1a6f622be991322d7bcc536}\label{classAirConditionSensor_a76aa91cfb1a6f622be991322d7bcc536}} 
+\index{AirConditionSensor@{AirConditionSensor}!airCondition@{airCondition}}
+\index{airCondition@{airCondition}!AirConditionSensor@{AirConditionSensor}}
+\doxysubsubsection{\texorpdfstring{airCondition}{airCondition}}
+{\footnotesize\ttfamily float Air\+Condition\+Sensor\+::air\+Condition\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Air\+Condition\+Sensor.\+h.
+
+
+
+Referenced by get\+Info().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AirConditionSensor_8h}{Air\+Condition\+Sensor.\+h}}\item 
+\mbox{\hyperlink{AirConditionSensor_8cpp}{Air\+Condition\+Sensor.\+cpp}}\end{DoxyCompactItemize}

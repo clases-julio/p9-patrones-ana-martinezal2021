@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['savefile_64',['saveFile',['../classDataBase.html#ac522929fd10c91ff880d41fa046380b3',1,'DataBase']]],
+  ['sensor_65',['Sensor',['../classSensor.html',1,'Sensor'],['../classSensor.html#a342d6d11ef572c8cba92cb76fb1a294b',1,'Sensor::Sensor()']]],
+  ['sensor_2ecpp_66',['Sensor.cpp',['../Sensor_8cpp.html',1,'']]],
+  ['sensor_2eh_67',['Sensor.h',['../Sensor_8h.html',1,'']]],
+  ['showadminchoices_68',['showAdminChoices',['../classDataBase.html#a480086ac7aefde05a27e5269922f7bb7',1,'DataBase']]],
+  ['showcamerachoices_69',['showCameraChoices',['../classDashboard.html#a7f5b6926e24e755797c60737fa066903',1,'Dashboard']]],
+  ['showchoice_70',['showChoice',['../classMicrophone.html#ac27b9e335838cdaec6ad17e1470f577b',1,'Microphone']]],
+  ['showmenu_71',['showMenu',['../classDashboard.html#a28f1d7e9394a4c0e1d76f9787912c715',1,'Dashboard']]],
+  ['showsensorchoices_72',['showSensorChoices',['../classDashboard.html#a6d7e7065f9238a05019f4a913fdea599',1,'Dashboard']]],
+  ['showuser_73',['showUser',['../classUser.html#afeefc9388e112d5b88ba169695d7b799',1,'User']]],
+  ['showusers_74',['showUsers',['../classDataBase.html#a5364ac4e3767d8638da4e58448bef8e9',1,'DataBase']]],
+  ['singledashboard_75',['singleDashboard',['../classDashboard.html#a7939fc35ee3976ba1cd67d6fa8552651',1,'Dashboard']]],
+  ['sound_76',['sound',['../classMicrophone.html#af161f04d664befc703379e11dc22b269',1,'Microphone']]],
+  ['state_77',['state',['../classMicrophone.html#aee5d04af047d37e5ed714701c3e0f048',1,'Microphone::state()'],['../classSensor.html#a55a5a955dde057c7db7215667dd69271',1,'Sensor::state()'],['../classCamera.html#a4f1ca0c4d61d6c0ae58da3f9517fc524',1,'Camera::state()']]],
+  ['stringexception_78',['StringException',['../classStringException.html#a58c16eb8f1b850999da200f60d117645',1,'StringException::StringException()'],['../classStringException.html',1,'StringException']]],
+  ['stringexception_2ecpp_79',['StringException.cpp',['../StringException_8cpp.html',1,'']]],
+  ['stringexception_2eh_80',['StringException.h',['../StringException_8h.html',1,'']]]
+];

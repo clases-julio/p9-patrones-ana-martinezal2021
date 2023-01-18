@@ -1,0 +1,325 @@
+\begin{theindex}
+
+  \item {A}
+    \subitem {Dashboard}, \hyperpage{19}
+  \item {addUser}
+    \subitem {DataBase}, \hyperpage{24}
+  \item {airCondition}
+    \subitem {AirConditionSensor}, \hyperpage{9}
+  \item {AirConditionSensor}, \hyperpage{7}
+    \subitem {airCondition}, \hyperpage{9}
+    \subitem {AirConditionSensor}, \hyperpage{8}
+    \subitem {getInfo}, \hyperpage{9}
+  \item {AirConditionSensor.cpp}, \hyperpage{65}
+  \item {AirConditionSensor.h}, \hyperpage{65}
+
+  \indexspace
+
+  \item {Camera}, \hyperpage{10}
+    \subitem {Camera}, \hyperpage{11}
+    \subitem {getInfo}, \hyperpage{11}
+    \subitem {state}, \hyperpage{13}
+    \subitem {turnOff}, \hyperpage{11}
+    \subitem {turnOn}, \hyperpage{12}
+  \item {Camera.cpp}, \hyperpage{67}
+  \item {Camera.h}, \hyperpage{67}
+  \item {checkAdmin}
+    \subitem {User}, \hyperpage{58}
+  \item {checkLogin}
+    \subitem {Login}, \hyperpage{36}
+  \item {checkUser}
+    \subitem {DataBase}, \hyperpage{24}
+  \item {choice}
+    \subitem {Dashboard}, \hyperpage{19}
+    \subitem {DataBase}, \hyperpage{28}
+    \subitem {Microphone}, \hyperpage{41}
+
+  \indexspace
+
+  \item {D}
+    \subitem {Dashboard}, \hyperpage{20}
+  \item {Dashboard}, \hyperpage{13}
+    \subitem {A}, \hyperpage{19}
+    \subitem {choice}, \hyperpage{19}
+    \subitem {D}, \hyperpage{20}
+    \subitem {Dashboard}, \hyperpage{14}
+    \subitem {getDashboard}, \hyperpage{15}
+    \subitem {getOption}, \hyperpage{15}
+    \subitem {H}, \hyperpage{20}
+    \subitem {L}, \hyperpage{20}
+    \subitem {Li}, \hyperpage{20}
+    \subitem {M}, \hyperpage{20}
+    \subitem {operator=}, \hyperpage{16}
+    \subitem {option}, \hyperpage{20}
+    \subitem {RC}, \hyperpage{21}
+    \subitem {showCameraChoices}, \hyperpage{16}
+    \subitem {showMenu}, \hyperpage{17}
+    \subitem {showSensorChoices}, \hyperpage{18}
+    \subitem {singleDashboard}, \hyperpage{21}
+    \subitem {T}, \hyperpage{21}
+    \subitem {TC}, \hyperpage{21}
+  \item {Dashboard.cpp}, \hyperpage{68}
+  \item {Dashboard.h}, \hyperpage{69}
+  \item {DataBase}, \hyperpage{22}
+    \subitem {addUser}, \hyperpage{24}
+    \subitem {checkUser}, \hyperpage{24}
+    \subitem {choice}, \hyperpage{28}
+    \subitem {DataBase}, \hyperpage{23}
+    \subitem {dataBaseUser}, \hyperpage{28}
+    \subitem {deleteUser}, \hyperpage{25}
+    \subitem {isAdmin}, \hyperpage{28}
+    \subitem {it}, \hyperpage{28}
+    \subitem {name}, \hyperpage{29}
+    \subitem {NIF}, \hyperpage{29}
+    \subitem {NIFStr}, \hyperpage{29}
+    \subitem {saveFile}, \hyperpage{26}
+    \subitem {showAdminChoices}, \hyperpage{26}
+    \subitem {showUsers}, \hyperpage{27}
+    \subitem {type}, \hyperpage{29}
+    \subitem {userDeleted}, \hyperpage{29}
+    \subitem {userNow}, \hyperpage{29}
+    \subitem {userNumber}, \hyperpage{30}
+    \subitem {userNumberStr}, \hyperpage{30}
+  \item {DataBase.cpp}, \hyperpage{70}
+  \item {DataBase.h}, \hyperpage{70}
+  \item {dataBaseUser}
+    \subitem {DataBase}, \hyperpage{28}
+  \item {deleteUser}
+    \subitem {DataBase}, \hyperpage{25}
+
+  \indexspace
+
+  \item {getDashboard}
+    \subitem {Dashboard}, \hyperpage{15}
+  \item {getInfo}
+    \subitem {AirConditionSensor}, \hyperpage{9}
+    \subitem {Camera}, \hyperpage{11}
+    \subitem {HumiditySensor}, \hyperpage{32}
+    \subitem {LigthLevelSensor}, \hyperpage{34}
+    \subitem {RGBCamera}, \hyperpage{45}
+    \subitem {Sensor}, \hyperpage{47}
+    \subitem {TemperatureSensor}, \hyperpage{52}
+    \subitem {ThermalCamera}, \hyperpage{54}
+  \item {getNIF}
+    \subitem {User}, \hyperpage{58}
+  \item {getOption}
+    \subitem {Dashboard}, \hyperpage{15}
+  \item {getSound}
+    \subitem {Microphone}, \hyperpage{40}
+  \item {getUserName}
+    \subitem {User}, \hyperpage{59}
+  \item {getUserNum}
+    \subitem {User}, \hyperpage{59}
+
+  \indexspace
+
+  \item {H}
+    \subitem {Dashboard}, \hyperpage{20}
+  \item {humidity}
+    \subitem {HumiditySensor}, \hyperpage{32}
+  \item {HumiditySensor}, \hyperpage{30}
+    \subitem {getInfo}, \hyperpage{32}
+    \subitem {humidity}, \hyperpage{32}
+    \subitem {HumiditySensor}, \hyperpage{31}
+  \item {HumiditySensor.cpp}, \hyperpage{72}
+  \item {HumiditySensor.h}, \hyperpage{72}
+
+  \indexspace
+
+  \item {isAdmin}
+    \subitem {DataBase}, \hyperpage{28}
+    \subitem {User}, \hyperpage{61}
+  \item {it}
+    \subitem {DataBase}, \hyperpage{28}
+
+  \indexspace
+
+  \item {L}
+    \subitem {Dashboard}, \hyperpage{20}
+  \item {Li}
+    \subitem {Dashboard}, \hyperpage{20}
+  \item {ligthLevel}
+    \subitem {LigthLevelSensor}, \hyperpage{34}
+  \item {LigthLevelSensor}, \hyperpage{33}
+    \subitem {getInfo}, \hyperpage{34}
+    \subitem {ligthLevel}, \hyperpage{34}
+    \subitem {LigthLevelSensor}, \hyperpage{34}
+  \item {LigthLevelSensor.cpp}, \hyperpage{74}
+  \item {LigthLevelSensor.h}, \hyperpage{74}
+  \item {Login}, \hyperpage{35}
+    \subitem {checkLogin}, \hyperpage{36}
+    \subitem {Login}, \hyperpage{36}
+    \subitem {NIF}, \hyperpage{37}
+    \subitem {NIFStr}, \hyperpage{37}
+    \subitem {userNow}, \hyperpage{38}
+    \subitem {userNowPtr}, \hyperpage{38}
+    \subitem {userNumber}, \hyperpage{38}
+    \subitem {userNumberStr}, \hyperpage{38}
+  \item {Login.cpp}, \hyperpage{76}
+  \item {Login.h}, \hyperpage{76}
+
+  \indexspace
+
+  \item {M}
+    \subitem {Dashboard}, \hyperpage{20}
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{78}
+  \item {main.cpp}, \hyperpage{78}
+    \subitem {main}, \hyperpage{78}
+  \item {Microphone}, \hyperpage{39}
+    \subitem {choice}, \hyperpage{41}
+    \subitem {getSound}, \hyperpage{40}
+    \subitem {Microphone}, \hyperpage{39}
+    \subitem {showChoice}, \hyperpage{40}
+    \subitem {sound}, \hyperpage{42}
+    \subitem {state}, \hyperpage{42}
+    \subitem {turnOff}, \hyperpage{41}
+    \subitem {turnOn}, \hyperpage{41}
+  \item {Microphone.cpp}, \hyperpage{80}
+  \item {Microphone.h}, \hyperpage{80}
+
+  \indexspace
+
+  \item {name}
+    \subitem {DataBase}, \hyperpage{29}
+    \subitem {User}, \hyperpage{61}
+  \item {NIF}
+    \subitem {DataBase}, \hyperpage{29}
+    \subitem {Login}, \hyperpage{37}
+    \subitem {User}, \hyperpage{61}
+  \item {NIFException}, \hyperpage{42}
+    \subitem {NIFException}, \hyperpage{43}
+  \item {NIFException.cpp}, \hyperpage{81}
+  \item {NIFException.h}, \hyperpage{82}
+  \item {NIFStr}
+    \subitem {DataBase}, \hyperpage{29}
+    \subitem {Login}, \hyperpage{37}
+
+  \indexspace
+
+  \item {operator$<$}
+    \subitem {User}, \hyperpage{60}
+  \item {operator=}
+    \subitem {Dashboard}, \hyperpage{16}
+  \item {option}
+    \subitem {Dashboard}, \hyperpage{20}
+
+  \indexspace
+
+  \item {RC}
+    \subitem {Dashboard}, \hyperpage{21}
+  \item {RGBCamera}, \hyperpage{44}
+    \subitem {getInfo}, \hyperpage{45}
+    \subitem {RGBCamera}, \hyperpage{45}
+  \item {RGBCamera.cpp}, \hyperpage{83}
+  \item {RGBCamera.h}, \hyperpage{83}
+
+  \indexspace
+
+  \item {saveFile}
+    \subitem {DataBase}, \hyperpage{26}
+  \item {Sensor}, \hyperpage{46}
+    \subitem {getInfo}, \hyperpage{47}
+    \subitem {Sensor}, \hyperpage{47}
+    \subitem {state}, \hyperpage{49}
+    \subitem {turnOff}, \hyperpage{47}
+    \subitem {turnOn}, \hyperpage{48}
+  \item {Sensor.cpp}, \hyperpage{85}
+  \item {Sensor.h}, \hyperpage{85}
+  \item {showAdminChoices}
+    \subitem {DataBase}, \hyperpage{26}
+  \item {showCameraChoices}
+    \subitem {Dashboard}, \hyperpage{16}
+  \item {showChoice}
+    \subitem {Microphone}, \hyperpage{40}
+  \item {showMenu}
+    \subitem {Dashboard}, \hyperpage{17}
+  \item {showSensorChoices}
+    \subitem {Dashboard}, \hyperpage{18}
+  \item {showUser}
+    \subitem {User}, \hyperpage{60}
+  \item {showUsers}
+    \subitem {DataBase}, \hyperpage{27}
+  \item {singleDashboard}
+    \subitem {Dashboard}, \hyperpage{21}
+  \item {sound}
+    \subitem {Microphone}, \hyperpage{42}
+  \item {state}
+    \subitem {Camera}, \hyperpage{13}
+    \subitem {Microphone}, \hyperpage{42}
+    \subitem {Sensor}, \hyperpage{49}
+  \item {StringException}, \hyperpage{49}
+    \subitem {StringException}, \hyperpage{50}
+  \item {StringException.cpp}, \hyperpage{86}
+  \item {StringException.h}, \hyperpage{86}
+
+  \indexspace
+
+  \item {T}
+    \subitem {Dashboard}, \hyperpage{21}
+  \item {TC}
+    \subitem {Dashboard}, \hyperpage{21}
+  \item {temperature}
+    \subitem {TemperatureSensor}, \hyperpage{52}
+  \item {TemperatureSensor}, \hyperpage{51}
+    \subitem {getInfo}, \hyperpage{52}
+    \subitem {temperature}, \hyperpage{52}
+    \subitem {TemperatureSensor}, \hyperpage{52}
+  \item {TemperatureSensor.cpp}, \hyperpage{88}
+  \item {TemperatureSensor.h}, \hyperpage{88}
+  \item {ThermalCamera}, \hyperpage{53}
+    \subitem {getInfo}, \hyperpage{54}
+    \subitem {ThermalCamera}, \hyperpage{54}
+  \item {ThermalCamera.cpp}, \hyperpage{90}
+  \item {ThermalCamera.h}, \hyperpage{90}
+  \item {turnOff}
+    \subitem {Camera}, \hyperpage{11}
+    \subitem {Microphone}, \hyperpage{41}
+    \subitem {Sensor}, \hyperpage{47}
+  \item {turnOn}
+    \subitem {Camera}, \hyperpage{12}
+    \subitem {Microphone}, \hyperpage{41}
+    \subitem {Sensor}, \hyperpage{48}
+  \item {type}
+    \subitem {DataBase}, \hyperpage{29}
+  \item {TypeError}, \hyperpage{55}
+    \subitem {TypeError}, \hyperpage{56}
+  \item {TypeError.cpp}, \hyperpage{92}
+  \item {TypeError.h}, \hyperpage{92}
+
+  \indexspace
+
+  \item {User}, \hyperpage{57}
+    \subitem {checkAdmin}, \hyperpage{58}
+    \subitem {getNIF}, \hyperpage{58}
+    \subitem {getUserName}, \hyperpage{59}
+    \subitem {getUserNum}, \hyperpage{59}
+    \subitem {isAdmin}, \hyperpage{61}
+    \subitem {name}, \hyperpage{61}
+    \subitem {NIF}, \hyperpage{61}
+    \subitem {operator$<$}, \hyperpage{60}
+    \subitem {showUser}, \hyperpage{60}
+    \subitem {User}, \hyperpage{58}
+    \subitem {userNumber}, \hyperpage{61}
+  \item {User.cpp}, \hyperpage{93}
+  \item {User.h}, \hyperpage{94}
+  \item {userDeleted}
+    \subitem {DataBase}, \hyperpage{29}
+  \item {userNow}
+    \subitem {DataBase}, \hyperpage{29}
+    \subitem {Login}, \hyperpage{38}
+  \item {userNowPtr}
+    \subitem {Login}, \hyperpage{38}
+  \item {userNumber}
+    \subitem {DataBase}, \hyperpage{30}
+    \subitem {Login}, \hyperpage{38}
+    \subitem {User}, \hyperpage{61}
+  \item {userNumberStr}
+    \subitem {DataBase}, \hyperpage{30}
+    \subitem {Login}, \hyperpage{38}
+  \item {UserNumException}, \hyperpage{62}
+    \subitem {UserNumException}, \hyperpage{63}
+  \item {UserNumException.cpp}, \hyperpage{95}
+  \item {UserNumException.h}, \hyperpage{95}
+
+\end{theindex}

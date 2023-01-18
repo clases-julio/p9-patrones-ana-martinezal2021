@@ -1,0 +1,116 @@
+\hypertarget{classHumiditySensor}{}\doxysection{Humidity\+Sensor Class Reference}
+\label{classHumiditySensor}\index{HumiditySensor@{HumiditySensor}}
+
+
+{\ttfamily \#include $<$Humidity\+Sensor.\+h$>$}
+
+
+
+Inheritance diagram for Humidity\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classHumiditySensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Humidity\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classHumiditySensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}{Humidity\+Sensor}} ()
+\item 
+void \mbox{\hyperlink{classHumiditySensor_a052569e6eeba5616254e8982a90c2662}{get\+Info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file Humidity\+Sensor.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}\label{classHumiditySensor_ad1d0c01c8a38493ca722de354fec56cc}} 
+\index{HumiditySensor@{HumiditySensor}!HumiditySensor@{HumiditySensor}}
+\index{HumiditySensor@{HumiditySensor}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{HumiditySensor()}{HumiditySensor()}}
+{\footnotesize\ttfamily Humidity\+Sensor\+::\+Humidity\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 :\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}}() \{\} \textcolor{comment}{//we define the constructor indicating that it is an inherit class of sensor}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHumiditySensor_a052569e6eeba5616254e8982a90c2662}\label{classHumiditySensor_a052569e6eeba5616254e8982a90c2662}} 
+\index{HumiditySensor@{HumiditySensor}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily void Humidity\+Sensor\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a random number to simulate de current humidity and displays it 
+
+Reimplemented from \mbox{\hyperlink{classSensor_a1fb11aadd1b30f2d650c4faf9358371f}{Sensor}}.
+
+
+
+Definition at line 11 of file Humidity\+Sensor.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                             \{}
+\DoxyCodeLine{12   srand(time(NULL)+1);  }
+\DoxyCodeLine{13   \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}} = rand()\%101;}
+\DoxyCodeLine{14   cout << \textcolor{stringliteral}{"{}\(\backslash\)nCurrent humidity: "{}} << \mbox{\hyperlink{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}{humidity}} << \textcolor{stringliteral}{"{}\%"{}} << endl;}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+References humidity.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}\label{classHumiditySensor_a9ffa8d46ead25ef515bbec6e7a482976}} 
+\index{HumiditySensor@{HumiditySensor}!humidity@{humidity}}
+\index{humidity@{humidity}!HumiditySensor@{HumiditySensor}}
+\doxysubsubsection{\texorpdfstring{humidity}{humidity}}
+{\footnotesize\ttfamily float Humidity\+Sensor\+::humidity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Humidity\+Sensor.\+h.
+
+
+
+Referenced by get\+Info().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{HumiditySensor_8h}{Humidity\+Sensor.\+h}}\item 
+\mbox{\hyperlink{HumiditySensor_8cpp}{Humidity\+Sensor.\+cpp}}\end{DoxyCompactItemize}
